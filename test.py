@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 def main():
   print("Hello World!")
-  
-main()
+
+if __name__ == "__main__":
+    main()
