@@ -1,7 +1,6 @@
-2021-09-03 13:37:00,288 Today is friday!
-2021-09-03 13:37:00,463 Logegd out
-2021-09-03 13:37:28,606 Today is friday!
-2021-09-03 13:37:28,673 Logegd out
-2021-09-03 13:45:47,407 Today is friday!
-2021-09-03 13:47:42,020 Today is friday!
-2021-09-03 13:49:28,333 Today is friday!
+2021-09-03 15:12:11,069 Database connection successful!
+2021-09-03 15:12:11,087 <p>Error: <traceback object at 0x7f062cc471c8></p>
+2021-09-03 15:16:57,231 Database connection successful!
+2021-09-03 15:16:57,248 <p>Error: <traceback object at 0x7fd10cb1b248></p>
+2021-09-03 15:18:26,164 Database connection successful!
+2021-09-03 15:18:26,188 VALUES Successful INSERTED INTO TABLE
