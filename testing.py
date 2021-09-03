@@ -7,9 +7,9 @@ def conn():
     'Database=TestDB;'
     'uid=sa;pwd=AgateZiedina2*')
   cursor = conn.cursor()
-  cursor.execute('''CREATE TABLE testTableSec(
-    FirstName TEXT NOT NULL,
-    LastName  TEXT NOT NULL );''')
+  cursor.execute('''INSERT INTO testTable(FirstName,LastName) VALUES
+    ('Agate','Ziedina'),
+    ('Juris', 'Kalnins')''')
   conn.commit()
   conn.close()
   return conn
