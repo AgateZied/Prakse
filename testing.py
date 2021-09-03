@@ -26,8 +26,8 @@ def connections():
   return conn
 
 def create_table(connectionBool):
-  cursor = connectionBool.cursor()
   try:
+    cursor = connectionBool.cursor()
     cursor.execute('''CREATE TABLE testTable(
         FirstName TEXT NOT NULL,
         LastName  TEXT NOT NULL );''')
@@ -40,8 +40,8 @@ def create_table(connectionBool):
     logFileWriting("<p>Error: %s</p>" % message) #short error message
 
 def insert_table(connectionBool):
-  cursor = connectionBool.cursor()
   try:
+    cursor = connectionBool.cursor()
     cursor.execute('''INSERT INTO testTable(FirstName,LastName) VALUES
         ('Jasmine','Santina'),
         ('Karlis', 'Kalnins')''')
