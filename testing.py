@@ -7,13 +7,16 @@ def conn():
     'Database=TestDB;'
     'uid=sa;pwd=AgateZiedina2*')
   cursor = conn.cursor()
-  cursor.execute("CREATE TABLE testTable")
+  cursor.execute('''CREATE TABLE testTableSec(
+    FirstName TEXT NOT NULL,
+    LastName  TEXT NOT NULL );''')
+  conn.commit()
+  conn.close()
   return conn
 
 def main():
   print("Hello!")
   conn()
-  conn.close()
   print("BYE!")
 
 if __name__ == "__main__":
