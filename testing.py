@@ -13,17 +13,14 @@ def logFileWriting(txt):
 def endlessLoop():
   a=bool(True)
   while(a):
-    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
-      'Server=localhost;'
-      'Database=TestDB;'
-      'uid=sa;pwd=AgateZiedina2*')
-    cursor = conn.cursor()
+    connBool = connections()
+    cursor = connBool.cursor()
     cursor.execute('''INSERT INTO testTable(FirstName,LastName) VALUES
       ('Jautrite','bersina')''')
-    conn.commit()
+    connBool.commit()
     cursor.execute('''DELETE FROM testTable ''')
-    conn.commit()
-    conn.close()
+    connBool.commit()
+    connBool.close()
     
 def connections():
   conn = None
