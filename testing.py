@@ -10,6 +10,21 @@ def logFileWriting(txt):
   logger.setLevel(logging.DEBUG)
   logger.info(txt)
 
+def endlessLoop():
+  a=bool(True)
+  while(a):
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+      'Server=localhost;'
+      'Database=TestDB;'
+      'uid=sa;pwd=AgateZiedina2*')
+    cursor = conn.cursor()
+    cursor.execute('''INSERT INTO testTable(FirstName,LastName) VALUES
+      ('Jautrite','bersina')''')
+    conn.commit()
+    cursor.execute('''DELETE FROM testTable ''')
+    conn.commit()
+    conn.close()
+    
 def connections():
   conn = None
   try:
@@ -19,9 +34,9 @@ def connections():
       'uid=sa;pwd=AgateZiedina2*')
     logFileWriting('Database connection successful!')
   except Exception as e:
-    message = sys.exc_info()[2]
-    #logFileWriting(logging.exception(e))  #full error message
-    logFileWriting( "Error: %s" % message)
+    #message = sys.exc_info()[2]
+    logFileWriting(logging.exception(e))  #full error message
+    #logFileWriting( "Error: %s" % message)
 
   return conn
 
@@ -35,9 +50,9 @@ def create_table(connectionBool):
    # connectionBool.close()
     logFileWriting('TABLE Successful CREATED')
   except Exception as e:
-    message = sys.exc_info()[2]
-    #logFileWriting(logging.exception(e))  #full error message
-    logFileWriting("<p>Error: %s</p>" % message) #short error message
+    #message = sys.exc_info()[2]
+    logFileWriting(logging.exception(e))  #full error message
+    #logFileWriting("<p>Error: %s</p>" % message) #short error message
 
 def insert_table(connectionBool):
   try:
@@ -49,15 +64,16 @@ def insert_table(connectionBool):
     connectionBool.close()
     logFileWriting('VALUES Successful INSERTED INTO TABLE')
   except Exception as e:
-    message = sys.exc_info()[2]
-    #logFileWriting(logging.exception(e))  #full error message
-    logFileWriting( "<p>Error: %s</p>" % message)
+    #message = sys.exc_info()[2]
+    logFileWriting(logging.exception(e))  #full error message
+    #logFileWriting( "<p>Error: %s</p>" % message)
 
 def main():
   print("Hello!")
-  connBool =connections()
+  endlessLoop()
+  #connBool =connections()
   #create_table(connBool)
-  insert_table(connBool)
+  #insert_table(connBool)
 """
   if bool(connBool):
     connBool.close()
