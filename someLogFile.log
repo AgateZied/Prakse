@@ -1,6 +1,1290 @@
-2021-09-03 15:12:11,069 Database connection successful!
-2021-09-03 15:12:11,087 <p>Error: <traceback object at 0x7f062cc471c8></p>
-2021-09-03 15:16:57,231 Database connection successful!
-2021-09-03 15:16:57,248 <p>Error: <traceback object at 0x7fd10cb1b248></p>
-2021-09-03 15:18:26,164 Database connection successful!
-2021-09-03 15:18:26,188 VALUES Successful INSERTED INTO TABLE
+2021-09-09 16:13:31,748 Time is working!!!
+2021-09-09 16:13:31,781 Time is working!!!
+2021-09-09 16:13:31,814 Time is working!!!
+2021-09-09 16:13:31,846 Time is working!!!
+2021-09-09 16:13:31,878 Time is working!!!
+2021-09-09 16:13:31,906 Time is working!!!
+2021-09-09 16:13:31,943 Time is working!!!
+2021-09-09 16:13:31,972 Time is working!!!
+2021-09-09 16:13:32,006 Time is working!!!
+2021-09-09 16:13:32,037 Time is working!!!
+2021-09-09 16:13:32,073 Time is working!!!
+2021-09-09 16:13:32,108 Time is working!!!
+2021-09-09 16:13:32,137 Time is working!!!
+2021-09-09 16:13:32,171 Time is working!!!
+2021-09-09 16:13:32,206 Time is working!!!
+2021-09-09 16:13:32,238 Time is working!!!
+2021-09-09 16:13:32,272 Time is working!!!
+2021-09-09 16:13:32,299 Time is working!!!
+2021-09-09 16:13:32,325 Time is working!!!
+2021-09-09 16:13:32,353 Time is working!!!
+2021-09-09 16:13:32,380 Time is working!!!
+2021-09-09 16:13:32,408 Time is working!!!
+2021-09-09 16:13:32,435 Time is working!!!
+2021-09-09 16:13:32,465 Time is working!!!
+2021-09-09 16:13:32,496 Time is working!!!
+2021-09-09 16:13:32,525 Time is working!!!
+2021-09-09 16:13:32,564 Time is working!!!
+2021-09-09 16:13:32,601 Time is working!!!
+2021-09-09 16:13:32,631 Time is working!!!
+2021-09-09 16:13:32,659 Time is working!!!
+2021-09-09 16:13:32,693 Time is working!!!
+2021-09-09 16:13:32,728 Time is working!!!
+2021-09-09 16:13:32,761 Time is working!!!
+2021-09-09 16:13:32,790 Time is working!!!
+2021-09-09 16:13:32,816 Time is working!!!
+2021-09-09 16:13:32,845 Time is working!!!
+2021-09-09 16:13:32,872 Time is working!!!
+2021-09-09 16:13:32,901 Time is working!!!
+2021-09-09 16:13:32,932 Time is working!!!
+2021-09-09 16:13:32,966 Time is working!!!
+2021-09-09 16:13:32,995 Time is working!!!
+2021-09-09 16:13:33,023 Time is working!!!
+2021-09-09 16:13:33,053 Time is working!!!
+2021-09-09 16:13:33,079 Time is working!!!
+2021-09-09 16:13:33,105 Time is working!!!
+2021-09-09 16:13:33,131 Time is working!!!
+2021-09-09 16:13:33,157 Time is working!!!
+2021-09-09 16:13:33,191 Time is working!!!
+2021-09-09 16:13:33,224 Time is working!!!
+2021-09-09 16:13:33,253 Time is working!!!
+2021-09-09 16:13:33,281 Time is working!!!
+2021-09-09 16:13:33,310 Time is working!!!
+2021-09-09 16:13:33,339 Time is working!!!
+2021-09-09 16:13:33,366 Time is working!!!
+2021-09-09 16:13:33,396 Time is working!!!
+2021-09-09 16:13:33,428 Time is working!!!
+2021-09-09 16:13:33,459 Time is working!!!
+2021-09-09 16:13:33,488 Time is working!!!
+2021-09-09 16:13:33,516 Time is working!!!
+2021-09-09 16:13:33,544 Time is working!!!
+2021-09-09 16:13:33,571 Time is working!!!
+2021-09-09 16:13:33,599 Time is working!!!
+2021-09-09 16:13:33,629 Time is working!!!
+2021-09-09 16:13:33,664 Time is working!!!
+2021-09-09 16:13:33,698 Time is working!!!
+2021-09-09 16:13:33,726 Time is working!!!
+2021-09-09 16:13:33,759 Time is working!!!
+2021-09-09 16:13:33,786 Time is working!!!
+2021-09-09 16:13:33,814 Time is working!!!
+2021-09-09 16:13:33,839 Time is working!!!
+2021-09-09 16:13:33,867 Time is working!!!
+2021-09-09 16:13:33,895 Time is working!!!
+2021-09-09 16:13:33,933 Time is working!!!
+2021-09-09 16:13:33,964 Time is working!!!
+2021-09-09 16:13:33,992 Time is working!!!
+2021-09-09 16:13:34,019 Time is working!!!
+2021-09-09 16:13:34,046 Time is working!!!
+2021-09-09 16:13:34,071 Time is working!!!
+2021-09-09 16:13:34,097 Time is working!!!
+2021-09-09 16:13:34,129 Time is working!!!
+2021-09-09 16:13:34,159 Time is working!!!
+2021-09-09 16:13:34,190 Time is working!!!
+2021-09-09 16:13:34,218 Time is working!!!
+2021-09-09 16:13:34,245 Time is working!!!
+2021-09-09 16:13:34,270 Time is working!!!
+2021-09-09 16:13:34,299 Time is working!!!
+2021-09-09 16:13:34,325 Time is working!!!
+2021-09-09 16:13:34,356 Time is working!!!
+2021-09-09 16:13:34,387 Time is working!!!
+2021-09-09 16:13:34,421 Time is working!!!
+2021-09-09 16:13:34,450 Time is working!!!
+2021-09-09 16:13:34,476 Time is working!!!
+2021-09-09 16:13:34,504 Time is working!!!
+2021-09-09 16:13:34,530 Time is working!!!
+2021-09-09 16:13:34,555 Time is working!!!
+2021-09-09 16:13:34,583 Time is working!!!
+2021-09-09 16:13:34,618 Time is working!!!
+2021-09-09 16:13:34,648 Time is working!!!
+2021-09-09 16:13:34,674 Time is working!!!
+2021-09-09 16:13:34,700 Time is working!!!
+2021-09-09 16:13:34,725 Time is working!!!
+2021-09-09 16:13:34,751 Time is working!!!
+2021-09-09 16:13:34,778 Time is working!!!
+2021-09-09 16:13:34,805 Time is working!!!
+2021-09-09 16:13:34,834 Time is working!!!
+2021-09-09 16:13:34,864 Time is working!!!
+2021-09-09 16:13:34,895 Time is working!!!
+2021-09-09 16:13:34,920 Time is working!!!
+2021-09-09 16:13:34,947 Time is working!!!
+2021-09-09 16:13:34,971 Time is working!!!
+2021-09-09 16:13:35,000 Time is working!!!
+2021-09-09 16:13:35,027 Time is working!!!
+2021-09-09 16:13:35,053 Time is working!!!
+2021-09-09 16:13:35,083 Time is working!!!
+2021-09-09 16:13:35,112 Time is working!!!
+2021-09-09 16:13:35,143 Time is working!!!
+2021-09-09 16:13:35,167 Time is working!!!
+2021-09-09 16:13:35,196 Time is working!!!
+2021-09-09 16:13:35,225 Time is working!!!
+2021-09-09 16:13:35,253 Time is working!!!
+2021-09-09 16:13:35,280 Time is working!!!
+2021-09-09 16:13:35,313 Time is working!!!
+2021-09-09 16:13:35,348 Time is working!!!
+2021-09-09 16:13:35,378 Time is working!!!
+2021-09-09 16:13:35,409 Time is working!!!
+2021-09-09 16:13:35,439 Time is working!!!
+2021-09-09 16:13:35,469 Time is working!!!
+2021-09-09 16:13:35,510 Time is working!!!
+2021-09-09 16:13:35,536 Time is working!!!
+2021-09-09 16:13:35,560 Time is working!!!
+2021-09-09 16:13:35,592 Time is working!!!
+2021-09-09 16:13:35,619 Time is working!!!
+2021-09-09 16:13:35,651 Time is working!!!
+2021-09-09 16:13:35,684 Time is working!!!
+2021-09-09 16:13:35,713 Time is working!!!
+2021-09-09 16:13:35,742 Time is working!!!
+2021-09-09 16:13:35,773 Time is working!!!
+2021-09-09 16:13:35,802 Time is working!!!
+2021-09-09 16:13:35,836 Time is working!!!
+2021-09-09 16:13:35,865 Time is working!!!
+2021-09-09 16:13:35,892 Time is working!!!
+2021-09-09 16:13:35,920 Time is working!!!
+2021-09-09 16:13:35,948 Time is working!!!
+2021-09-09 16:13:35,984 Time is working!!!
+2021-09-09 16:13:36,013 Time is working!!!
+2021-09-09 16:13:36,044 Time is working!!!
+2021-09-09 16:13:36,084 Time is working!!!
+2021-09-09 16:13:36,115 Time is working!!!
+2021-09-09 16:13:36,145 Time is working!!!
+2021-09-09 16:13:36,174 Time is working!!!
+2021-09-09 16:13:36,203 Time is working!!!
+2021-09-09 16:13:36,230 Time is working!!!
+2021-09-09 16:13:36,259 Time is working!!!
+2021-09-09 16:13:36,290 Time is working!!!
+2021-09-09 16:13:36,325 Time is working!!!
+2021-09-09 16:13:36,356 Time is working!!!
+2021-09-09 16:13:36,385 Time is working!!!
+2021-09-09 16:13:36,414 Time is working!!!
+2021-09-09 16:13:36,441 Time is working!!!
+2021-09-09 16:13:36,467 Time is working!!!
+2021-09-09 16:13:36,500 Time is working!!!
+2021-09-09 16:13:36,529 Time is working!!!
+2021-09-09 16:13:36,558 Time is working!!!
+2021-09-09 16:13:36,587 Time is working!!!
+2021-09-09 16:13:36,617 Time is working!!!
+2021-09-09 16:13:36,645 Time is working!!!
+2021-09-09 16:13:36,675 Time is working!!!
+2021-09-09 16:13:36,704 Time is working!!!
+2021-09-09 16:13:36,737 Time is working!!!
+2021-09-09 16:13:36,767 Time is working!!!
+2021-09-09 16:13:36,817 Time is working!!!
+2021-09-09 16:13:36,856 Time is working!!!
+2021-09-09 16:13:36,889 Time is working!!!
+2021-09-09 16:13:36,925 Time is working!!!
+2021-09-09 16:13:36,955 Time is working!!!
+2021-09-09 16:13:36,988 Time is working!!!
+2021-09-09 16:13:37,020 Time is working!!!
+2021-09-09 16:13:37,054 Time is working!!!
+2021-09-09 16:13:37,083 Time is working!!!
+2021-09-09 16:13:37,111 Time is working!!!
+2021-09-09 16:13:37,138 Time is working!!!
+2021-09-09 16:13:37,163 Time is working!!!
+2021-09-09 16:13:37,193 Time is working!!!
+2021-09-09 16:13:37,221 Time is working!!!
+2021-09-09 16:13:37,255 Time is working!!!
+2021-09-09 16:13:37,287 Time is working!!!
+2021-09-09 16:13:37,317 Time is working!!!
+2021-09-09 16:13:37,347 Time is working!!!
+2021-09-09 16:13:37,376 Time is working!!!
+2021-09-09 16:13:37,407 Time is working!!!
+2021-09-09 16:13:37,437 Time is working!!!
+2021-09-09 16:13:37,468 Time is working!!!
+2021-09-09 16:13:37,504 Time is working!!!
+2021-09-09 16:13:37,534 Time is working!!!
+2021-09-09 16:13:37,562 Time is working!!!
+2021-09-09 16:13:37,588 Time is working!!!
+2021-09-09 16:13:37,618 Time is working!!!
+2021-09-09 16:13:37,646 Time is working!!!
+2021-09-09 16:13:37,681 Time is working!!!
+2021-09-09 16:13:37,713 Time is working!!!
+2021-09-09 16:13:37,742 Time is working!!!
+2021-09-09 16:13:37,772 Time is working!!!
+2021-09-09 16:13:37,800 Time is working!!!
+2021-09-09 16:13:37,829 Time is working!!!
+2021-09-09 16:13:37,855 Time is working!!!
+2021-09-09 16:13:37,881 Time is working!!!
+2021-09-09 16:13:37,910 Time is working!!!
+2021-09-09 16:13:37,941 Time is working!!!
+2021-09-09 16:13:37,972 Time is working!!!
+2021-09-09 16:13:38,004 Time is working!!!
+2021-09-09 16:13:38,032 Time is working!!!
+2021-09-09 16:13:38,059 Time is working!!!
+2021-09-09 16:13:38,088 Time is working!!!
+2021-09-09 16:13:38,116 Time is working!!!
+2021-09-09 16:13:38,145 Time is working!!!
+2021-09-09 16:13:38,173 Time is working!!!
+2021-09-09 16:13:38,203 Time is working!!!
+2021-09-09 16:13:38,233 Time is working!!!
+2021-09-09 16:13:38,261 Time is working!!!
+2021-09-09 16:13:38,289 Time is working!!!
+2021-09-09 16:13:38,322 Time is working!!!
+2021-09-09 16:13:38,351 Time is working!!!
+2021-09-09 16:13:38,379 Time is working!!!
+2021-09-09 16:13:38,416 Time is working!!!
+2021-09-09 16:13:38,449 Time is working!!!
+2021-09-09 16:13:38,480 Time is working!!!
+2021-09-09 16:13:38,506 Time is working!!!
+2021-09-09 16:13:38,534 Time is working!!!
+2021-09-09 16:13:38,562 Time is working!!!
+2021-09-09 16:13:38,592 Time is working!!!
+2021-09-09 16:13:38,621 Time is working!!!
+2021-09-09 16:13:38,649 Time is working!!!
+2021-09-09 16:13:38,683 Time is working!!!
+2021-09-09 16:13:38,712 Time is working!!!
+2021-09-09 16:13:38,741 Time is working!!!
+2021-09-09 16:13:38,770 Time is working!!!
+2021-09-09 16:13:38,797 Time is working!!!
+2021-09-09 16:13:38,825 Time is working!!!
+2021-09-09 16:13:38,856 Time is working!!!
+2021-09-09 16:13:38,884 Time is working!!!
+2021-09-09 16:13:38,915 Time is working!!!
+2021-09-09 16:13:38,942 Time is working!!!
+2021-09-09 16:13:38,973 Time is working!!!
+2021-09-09 16:13:39,003 Time is working!!!
+2021-09-09 16:13:39,032 Time is working!!!
+2021-09-09 16:13:39,062 Time is working!!!
+2021-09-09 16:13:39,090 Time is working!!!
+2021-09-09 16:13:39,119 Time is working!!!
+2021-09-09 16:13:39,149 Time is working!!!
+2021-09-09 16:13:39,180 Time is working!!!
+2021-09-09 16:13:39,208 Time is working!!!
+2021-09-09 16:13:39,235 Time is working!!!
+2021-09-09 16:13:39,262 Time is working!!!
+2021-09-09 16:13:39,290 Time is working!!!
+2021-09-09 16:13:39,318 Time is working!!!
+2021-09-09 16:13:39,349 Time is working!!!
+2021-09-09 16:13:39,383 Time is working!!!
+2021-09-09 16:13:39,414 Time is working!!!
+2021-09-09 16:13:39,440 Time is working!!!
+2021-09-09 16:13:39,470 Time is working!!!
+2021-09-09 16:13:39,499 Time is working!!!
+2021-09-09 16:13:39,524 Time is working!!!
+2021-09-09 16:13:39,554 Time is working!!!
+2021-09-09 16:13:39,582 Time is working!!!
+2021-09-09 16:13:39,615 Time is working!!!
+2021-09-09 16:13:39,646 Time is working!!!
+2021-09-09 16:13:39,672 Time is working!!!
+2021-09-09 16:13:39,699 Time is working!!!
+2021-09-09 16:13:39,726 Time is working!!!
+2021-09-09 16:13:39,751 Time is working!!!
+2021-09-09 16:13:39,780 Time is working!!!
+2021-09-09 16:13:39,811 Time is working!!!
+2021-09-09 16:13:39,847 Time is working!!!
+2021-09-09 16:13:39,879 Time is working!!!
+2021-09-09 16:13:39,908 Time is working!!!
+2021-09-09 16:13:39,937 Time is working!!!
+2021-09-09 16:13:39,962 Time is working!!!
+2021-09-09 16:13:39,991 Time is working!!!
+2021-09-09 16:13:40,018 Time is working!!!
+2021-09-09 16:13:40,045 Time is working!!!
+2021-09-09 16:13:40,076 Time is working!!!
+2021-09-09 16:13:40,110 Time is working!!!
+2021-09-09 16:13:40,139 Time is working!!!
+2021-09-09 16:13:40,167 Time is working!!!
+2021-09-09 16:13:40,194 Time is working!!!
+2021-09-09 16:13:40,221 Time is working!!!
+2021-09-09 16:13:40,248 Time is working!!!
+2021-09-09 16:13:40,278 Time is working!!!
+2021-09-09 16:13:40,311 Time is working!!!
+2021-09-09 16:13:40,343 Time is working!!!
+2021-09-09 16:13:40,374 Time is working!!!
+2021-09-09 16:13:40,402 Time is working!!!
+2021-09-09 16:13:40,430 Time is working!!!
+2021-09-09 16:13:40,460 Time is working!!!
+2021-09-09 16:13:40,489 Time is working!!!
+2021-09-09 16:13:40,517 Time is working!!!
+2021-09-09 16:13:40,551 Time is working!!!
+2021-09-09 16:13:40,579 Time is working!!!
+2021-09-09 16:13:40,647 Time is working!!!
+2021-09-09 16:13:40,678 Time is working!!!
+2021-09-09 16:13:40,705 Time is working!!!
+2021-09-09 16:13:40,736 Time is working!!!
+2021-09-09 16:13:40,771 Time is working!!!
+2021-09-09 16:13:40,833 ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "TestDB" requested by the login. The login failed.')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 975, in ctrl_err
+    raise ProgrammingError(state,err_text)
+pypyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "TestDB" requested by the login. The login failed.')
+2021-09-09 16:13:40,837 None
+2021-09-09 16:13:40,837 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:13:40,837 None
+2021-09-09 16:13:40,858 ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "TestDB" requested by the login. The login failed.')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 975, in ctrl_err
+    raise ProgrammingError(state,err_text)
+pypyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "TestDB" requested by the login. The login failed.')
+2021-09-09 16:13:40,858 None
+2021-09-09 16:13:40,858 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:13:40,859 None
+2021-09-09 16:13:40,872 ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "TestDB" requested by the login. The login failed.')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 975, in ctrl_err
+    raise ProgrammingError(state,err_text)
+pypyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "TestDB" requested by the login. The login failed.')
+2021-09-09 16:13:40,873 None
+2021-09-09 16:13:40,873 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:13:40,873 None
+2021-09-09 16:13:40,888 ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "TestDB" requested by the login. The login failed.')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 975, in ctrl_err
+    raise ProgrammingError(state,err_text)
+pypyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "TestDB" requested by the login. The login failed.')
+2021-09-09 16:13:40,889 None
+2021-09-09 16:13:40,889 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:13:40,889 None
+2021-09-09 16:13:40,904 ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "TestDB" requested by the login. The login failed.')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 975, in ctrl_err
+    raise ProgrammingError(state,err_text)
+pypyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "TestDB" requested by the login. The login failed.')
+2021-09-09 16:13:40,905 None
+2021-09-09 16:13:40,905 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:13:40,905 None
+2021-09-09 16:13:40,919 ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "TestDB" requested by the login. The login failed.')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 975, in ctrl_err
+    raise ProgrammingError(state,err_text)
+pypyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "TestDB" requested by the login. The login failed.')
+2021-09-09 16:13:40,919 None
+2021-09-09 16:13:40,920 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:13:40,920 None
+2021-09-09 16:13:40,929 list index out of range
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 972, in ctrl_err
+    state = err_list[0][0]
+IndexError: list index out of range
+2021-09-09 16:13:40,929 None
+2021-09-09 16:13:40,929 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:13:40,929 None
+2021-09-09 16:13:40,939 ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Client unable to establish connection because an error was encountered during handshakes before login. Common causes include client attempting to connect to an unsupported version of SQL Server, server too busy to accept new connections or a resource limitation (memory or maximum allowed connections) on the server.')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 987, in ctrl_err
+    raise DatabaseError(state,err_text)
+pypyodbc.DatabaseError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Client unable to establish connection because an error was encountered during handshakes before login. Common causes include client attempting to connect to an unsupported version of SQL Server, server too busy to accept new connections or a resource limitation (memory or maximum allowed connections) on the server.')
+2021-09-09 16:13:40,939 None
+2021-09-09 16:13:40,939 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:13:40,939 None
+2021-09-09 16:13:41,040 ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Client unable to establish connection because an error was encountered during handshakes before login. Common causes include client attempting to connect to an unsupported version of SQL Server, server too busy to accept new connections or a resource limitation (memory or maximum allowed connections) on the server.')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 987, in ctrl_err
+    raise DatabaseError(state,err_text)
+pypyodbc.DatabaseError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Client unable to establish connection because an error was encountered during handshakes before login. Common causes include client attempting to connect to an unsupported version of SQL Server, server too busy to accept new connections or a resource limitation (memory or maximum allowed connections) on the server.')
+2021-09-09 16:13:41,040 None
+2021-09-09 16:13:41,040 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:13:41,041 None
+2021-09-09 16:13:56,045 ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 983, in ctrl_err
+    raise OperationalError(state,err_text)
+pypyodbc.OperationalError: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+2021-09-09 16:13:56,045 None
+2021-09-09 16:13:56,046 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:13:56,046 None
+2021-09-09 16:14:11,049 ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 983, in ctrl_err
+    raise OperationalError(state,err_text)
+pypyodbc.OperationalError: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+2021-09-09 16:14:11,050 None
+2021-09-09 16:14:11,050 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:14:11,050 None
+2021-09-09 16:14:26,054 ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 983, in ctrl_err
+    raise OperationalError(state,err_text)
+pypyodbc.OperationalError: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+2021-09-09 16:14:26,055 None
+2021-09-09 16:14:26,055 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:14:26,056 None
+2021-09-09 16:14:41,060 ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 983, in ctrl_err
+    raise OperationalError(state,err_text)
+pypyodbc.OperationalError: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+2021-09-09 16:14:41,060 None
+2021-09-09 16:14:41,061 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:14:41,061 None
+2021-09-09 16:14:56,064 ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 983, in ctrl_err
+    raise OperationalError(state,err_text)
+pypyodbc.OperationalError: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+2021-09-09 16:14:56,065 None
+2021-09-09 16:14:56,065 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:14:56,066 None
+2021-09-09 16:15:11,069 ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 983, in ctrl_err
+    raise OperationalError(state,err_text)
+pypyodbc.OperationalError: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+2021-09-09 16:15:11,070 None
+2021-09-09 16:15:11,070 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:15:11,070 None
+2021-09-09 16:15:26,073 ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 983, in ctrl_err
+    raise OperationalError(state,err_text)
+pypyodbc.OperationalError: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+2021-09-09 16:15:26,074 None
+2021-09-09 16:15:26,074 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:15:26,074 None
+2021-09-09 16:15:41,079 ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 983, in ctrl_err
+    raise OperationalError(state,err_text)
+pypyodbc.OperationalError: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+2021-09-09 16:15:41,080 None
+2021-09-09 16:15:41,080 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:15:41,080 None
+2021-09-09 16:15:56,085 ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2507, in connect
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1009, in check_success
+    ctrl_err(SQL_HANDLE_DBC, ODBC_obj.dbc_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 983, in ctrl_err
+    raise OperationalError(state,err_text)
+pypyodbc.OperationalError: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired')
+2021-09-09 16:15:56,086 None
+2021-09-09 16:15:56,086 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:15:56,086 None
+2021-09-09 16:16:04,178 Time is working!!!
+2021-09-09 16:16:04,227 Time is working!!!
+2021-09-09 16:16:04,255 Time is working!!!
+2021-09-09 16:16:04,296 Time is working!!!
+2021-09-09 16:16:04,337 Time is working!!!
+2021-09-09 16:16:04,363 Time is working!!!
+2021-09-09 16:16:04,396 Time is working!!!
+2021-09-09 16:16:04,427 Time is working!!!
+2021-09-09 16:16:04,463 Time is working!!!
+2021-09-09 16:16:04,493 Time is working!!!
+2021-09-09 16:16:04,528 Time is working!!!
+2021-09-09 16:16:04,558 Time is working!!!
+2021-09-09 16:16:04,584 Time is working!!!
+2021-09-09 16:16:04,612 Time is working!!!
+2021-09-09 16:16:04,641 Time is working!!!
+2021-09-09 16:16:04,671 Time is working!!!
+2021-09-09 16:16:04,706 Time is working!!!
+2021-09-09 16:16:04,733 Time is working!!!
+2021-09-09 16:16:04,765 Time is working!!!
+2021-09-09 16:16:04,793 Time is working!!!
+2021-09-09 16:16:04,819 Time is working!!!
+2021-09-09 16:16:04,846 Time is working!!!
+2021-09-09 16:16:04,879 Time is working!!!
+2021-09-09 16:16:04,912 Time is working!!!
+2021-09-09 16:16:04,942 Time is working!!!
+2021-09-09 16:16:04,969 Time is working!!!
+2021-09-09 16:16:04,996 Time is working!!!
+2021-09-09 16:16:05,022 Time is working!!!
+2021-09-09 16:16:05,046 Time is working!!!
+2021-09-09 16:16:05,071 Time is working!!!
+2021-09-09 16:16:05,101 Time is working!!!
+2021-09-09 16:16:05,134 Time is working!!!
+2021-09-09 16:16:05,170 Time is working!!!
+2021-09-09 16:16:05,194 Time is working!!!
+2021-09-09 16:16:05,221 Time is working!!!
+2021-09-09 16:16:05,245 Time is working!!!
+2021-09-09 16:16:05,271 Time is working!!!
+2021-09-09 16:16:05,299 Time is working!!!
+2021-09-09 16:16:05,326 Time is working!!!
+2021-09-09 16:16:05,371 Time is working!!!
+2021-09-09 16:16:05,399 Time is working!!!
+2021-09-09 16:16:05,434 Time is working!!!
+2021-09-09 16:16:05,460 Time is working!!!
+2021-09-09 16:16:05,486 Time is working!!!
+2021-09-09 16:16:05,512 Time is working!!!
+2021-09-09 16:16:05,543 Time is working!!!
+2021-09-09 16:16:05,570 Time is working!!!
+2021-09-09 16:16:05,602 Time is working!!!
+2021-09-09 16:16:05,639 Time is working!!!
+2021-09-09 16:16:05,666 Time is working!!!
+2021-09-09 16:16:05,689 Time is working!!!
+2021-09-09 16:16:05,714 Time is working!!!
+2021-09-09 16:16:05,740 Time is working!!!
+2021-09-09 16:16:05,765 Time is working!!!
+2021-09-09 16:16:05,792 Time is working!!!
+2021-09-09 16:16:05,820 Time is working!!!
+2021-09-09 16:16:05,849 Time is working!!!
+2021-09-09 16:16:05,883 Time is working!!!
+2021-09-09 16:16:05,908 Time is working!!!
+2021-09-09 16:16:05,970 Time is working!!!
+2021-09-09 16:16:06,050 Time is working!!!
+2021-09-09 16:16:06,080 Time is working!!!
+2021-09-09 16:16:06,108 Time is working!!!
+2021-09-09 16:16:06,176 Time is working!!!
+2021-09-09 16:16:06,220 Time is working!!!
+2021-09-09 16:16:06,265 Time is working!!!
+2021-09-09 16:16:06,298 Time is working!!!
+2021-09-09 16:16:06,329 Time is working!!!
+2021-09-09 16:16:06,369 Time is working!!!
+2021-09-09 16:16:06,401 Time is working!!!
+2021-09-09 16:16:06,445 Time is working!!!
+2021-09-09 16:16:06,482 Time is working!!!
+2021-09-09 16:16:06,517 Time is working!!!
+2021-09-09 16:16:06,549 Time is working!!!
+2021-09-09 16:16:06,595 Time is working!!!
+2021-09-09 16:16:06,638 Time is working!!!
+2021-09-09 16:16:06,680 Time is working!!!
+2021-09-09 16:16:06,720 Time is working!!!
+2021-09-09 16:16:06,755 Time is working!!!
+2021-09-09 16:16:06,790 Time is working!!!
+2021-09-09 16:16:06,825 Time is working!!!
+2021-09-09 16:16:06,882 Time is working!!!
+2021-09-09 16:16:06,946 Time is working!!!
+2021-09-09 16:16:06,997 Time is working!!!
+2021-09-09 16:16:07,026 Time is working!!!
+2021-09-09 16:16:07,057 Time is working!!!
+2021-09-09 16:16:07,091 Time is working!!!
+2021-09-09 16:16:07,147 Time is working!!!
+2021-09-09 16:16:07,195 Time is working!!!
+2021-09-09 16:16:07,223 Time is working!!!
+2021-09-09 16:16:07,255 Time is working!!!
+2021-09-09 16:16:07,288 Time is working!!!
+2021-09-09 16:16:07,329 Time is working!!!
+2021-09-09 16:16:07,363 Time is working!!!
+2021-09-09 16:16:07,398 Time is working!!!
+2021-09-09 16:16:07,432 Time is working!!!
+2021-09-09 16:16:07,464 Time is working!!!
+2021-09-09 16:16:07,494 Time is working!!!
+2021-09-09 16:16:07,523 Time is working!!!
+2021-09-09 16:16:07,552 Time is working!!!
+2021-09-09 16:16:07,583 Time is working!!!
+2021-09-09 16:16:07,614 Time is working!!!
+2021-09-09 16:16:07,645 Time is working!!!
+2021-09-09 16:16:07,683 Time is working!!!
+2021-09-09 16:16:07,714 Time is working!!!
+2021-09-09 16:16:07,745 Time is working!!!
+2021-09-09 16:16:07,774 Time is working!!!
+2021-09-09 16:16:07,804 Time is working!!!
+2021-09-09 16:16:07,834 Time is working!!!
+2021-09-09 16:16:07,861 Time is working!!!
+2021-09-09 16:16:07,888 Time is working!!!
+2021-09-09 16:16:07,915 Time is working!!!
+2021-09-09 16:16:07,943 Time is working!!!
+2021-09-09 16:16:07,976 Time is working!!!
+2021-09-09 16:16:08,006 Time is working!!!
+2021-09-09 16:16:08,040 Time is working!!!
+2021-09-09 16:16:08,069 Time is working!!!
+2021-09-09 16:16:08,099 Time is working!!!
+2021-09-09 16:16:08,128 Time is working!!!
+2021-09-09 16:16:08,154 Time is working!!!
+2021-09-09 16:16:08,182 Time is working!!!
+2021-09-09 16:16:08,210 Time is working!!!
+2021-09-09 16:16:08,242 Time is working!!!
+2021-09-09 16:16:08,275 Time is working!!!
+2021-09-09 16:16:08,308 Time is working!!!
+2021-09-09 16:16:08,336 Time is working!!!
+2021-09-09 16:16:08,362 Time is working!!!
+2021-09-09 16:16:08,389 Time is working!!!
+2021-09-09 16:16:08,417 Time is working!!!
+2021-09-09 16:16:08,446 Time is working!!!
+2021-09-09 16:16:08,476 Time is working!!!
+2021-09-09 16:16:08,507 Time is working!!!
+2021-09-09 16:16:08,537 Time is working!!!
+2021-09-09 16:16:08,564 Time is working!!!
+2021-09-09 16:16:08,596 Time is working!!!
+2021-09-09 16:16:08,623 Time is working!!!
+2021-09-09 16:16:08,651 Time is working!!!
+2021-09-09 16:16:08,683 Time is working!!!
+2021-09-09 16:16:08,714 Time is working!!!
+2021-09-09 16:16:08,746 Time is working!!!
+2021-09-09 16:16:08,773 Time is working!!!
+2021-09-09 16:16:08,799 Time is working!!!
+2021-09-09 16:16:08,825 Time is working!!!
+2021-09-09 16:16:08,851 Time is working!!!
+2021-09-09 16:16:08,876 Time is working!!!
+2021-09-09 16:16:08,908 Time is working!!!
+2021-09-09 16:16:08,943 Time is working!!!
+2021-09-09 16:16:08,979 Time is working!!!
+2021-09-09 16:16:09,007 Time is working!!!
+2021-09-09 16:16:09,034 Time is working!!!
+2021-09-09 16:16:09,061 Time is working!!!
+2021-09-09 16:16:09,088 Time is working!!!
+2021-09-09 16:16:09,117 Time is working!!!
+2021-09-09 16:16:09,147 Time is working!!!
+2021-09-09 16:16:09,180 Time is working!!!
+2021-09-09 16:16:09,217 Time is working!!!
+2021-09-09 16:16:09,254 Time is working!!!
+2021-09-09 16:16:09,285 Time is working!!!
+2021-09-09 16:16:09,324 Time is working!!!
+2021-09-09 16:16:09,356 Time is working!!!
+2021-09-09 16:16:09,389 Time is working!!!
+2021-09-09 16:16:09,422 Time is working!!!
+2021-09-09 16:16:09,459 Time is working!!!
+2021-09-09 16:16:09,491 Time is working!!!
+2021-09-09 16:16:09,527 Time is working!!!
+2021-09-09 16:16:09,558 Time is working!!!
+2021-09-09 16:16:09,589 Time is working!!!
+2021-09-09 16:16:09,620 Time is working!!!
+2021-09-09 16:16:09,649 Time is working!!!
+2021-09-09 16:16:09,683 Time is working!!!
+2021-09-09 16:16:09,722 Time is working!!!
+2021-09-09 16:16:09,753 Time is working!!!
+2021-09-09 16:16:09,786 Time is working!!!
+2021-09-09 16:16:09,818 Time is working!!!
+2021-09-09 16:16:09,847 Time is working!!!
+2021-09-09 16:16:09,878 Time is working!!!
+2021-09-09 16:16:09,913 Time is working!!!
+2021-09-09 16:16:09,951 Time is working!!!
+2021-09-09 16:16:09,983 Time is working!!!
+2021-09-09 16:16:10,012 Time is working!!!
+2021-09-09 16:16:10,051 Time is working!!!
+2021-09-09 16:16:10,124 Time is working!!!
+2021-09-09 16:16:10,159 Time is working!!!
+2021-09-09 16:16:10,194 Time is working!!!
+2021-09-09 16:16:10,228 Time is working!!!
+2021-09-09 16:16:10,258 Time is working!!!
+2021-09-09 16:16:10,287 Time is working!!!
+2021-09-09 16:16:10,317 Time is working!!!
+2021-09-09 16:16:10,349 Time is working!!!
+2021-09-09 16:16:10,387 Time is working!!!
+2021-09-09 16:16:10,425 Time is working!!!
+2021-09-09 16:16:10,457 Time is working!!!
+2021-09-09 16:16:10,483 Time is working!!!
+2021-09-09 16:16:10,511 Time is working!!!
+2021-09-09 16:16:10,540 Time is working!!!
+2021-09-09 16:16:10,568 Time is working!!!
+2021-09-09 16:16:10,601 Time is working!!!
+2021-09-09 16:16:10,633 Time is working!!!
+2021-09-09 16:16:10,664 Time is working!!!
+2021-09-09 16:16:10,695 Time is working!!!
+2021-09-09 16:16:10,730 Time is working!!!
+2021-09-09 16:16:10,762 Time is working!!!
+2021-09-09 16:16:10,790 Time is working!!!
+2021-09-09 16:16:10,822 Time is working!!!
+2021-09-09 16:16:10,851 Time is working!!!
+2021-09-09 16:16:10,884 Time is working!!!
+2021-09-09 16:16:10,914 Time is working!!!
+2021-09-09 16:16:10,949 Time is working!!!
+2021-09-09 16:16:10,982 Time is working!!!
+2021-09-09 16:16:11,011 Time is working!!!
+2021-09-09 16:16:11,043 Time is working!!!
+2021-09-09 16:16:11,075 Time is working!!!
+2021-09-09 16:16:11,104 Time is working!!!
+2021-09-09 16:16:11,135 Time is working!!!
+2021-09-09 16:16:11,170 Time is working!!!
+2021-09-09 16:16:11,204 Time is working!!!
+2021-09-09 16:16:11,231 Time is working!!!
+2021-09-09 16:16:11,260 Time is working!!!
+2021-09-09 16:16:11,296 Time is working!!!
+2021-09-09 16:16:11,326 Time is working!!!
+2021-09-09 16:16:11,355 Time is working!!!
+2021-09-09 16:16:11,382 Time is working!!!
+2021-09-09 16:16:11,410 Time is working!!!
+2021-09-09 16:16:11,436 Time is working!!!
+2021-09-09 16:16:11,475 Time is working!!!
+2021-09-09 16:16:11,504 Time is working!!!
+2021-09-09 16:16:11,541 Time is working!!!
+2021-09-09 16:16:11,575 Time is working!!!
+2021-09-09 16:16:11,603 Time is working!!!
+2021-09-09 16:16:11,628 Time is working!!!
+2021-09-09 16:16:11,655 Time is working!!!
+2021-09-09 16:16:11,680 Time is working!!!
+2021-09-09 16:16:11,712 Time is working!!!
+2021-09-09 16:16:11,738 Time is working!!!
+2021-09-09 16:16:11,764 Time is working!!!
+2021-09-09 16:16:11,791 Time is working!!!
+2021-09-09 16:16:11,819 Time is working!!!
+2021-09-09 16:16:11,849 Time is working!!!
+2021-09-09 16:16:11,878 Time is working!!!
+2021-09-09 16:16:11,909 Time is working!!!
+2021-09-09 16:16:11,939 Time is working!!!
+2021-09-09 16:16:11,972 Time is working!!!
+2021-09-09 16:16:12,000 Time is working!!!
+2021-09-09 16:16:12,028 Time is working!!!
+2021-09-09 16:16:12,057 Time is working!!!
+2021-09-09 16:16:12,093 Time is working!!!
+2021-09-09 16:16:12,123 Time is working!!!
+2021-09-09 16:16:12,150 Time is working!!!
+2021-09-09 16:16:12,178 Time is working!!!
+2021-09-09 16:16:12,206 Time is working!!!
+2021-09-09 16:16:12,239 Time is working!!!
+2021-09-09 16:16:12,269 Time is working!!!
+2021-09-09 16:16:12,308 Time is working!!!
+2021-09-09 16:16:12,335 Time is working!!!
+2021-09-09 16:16:12,362 Time is working!!!
+2021-09-09 16:16:12,410 Time is working!!!
+2021-09-09 16:16:12,442 Time is working!!!
+2021-09-09 16:16:12,477 Time is working!!!
+2021-09-09 16:16:12,505 Time is working!!!
+2021-09-09 16:16:12,541 Time is working!!!
+2021-09-09 16:16:12,569 Time is working!!!
+2021-09-09 16:16:12,597 Time is working!!!
+2021-09-09 16:16:12,622 Time is working!!!
+2021-09-09 16:16:12,647 Time is working!!!
+2021-09-09 16:16:12,672 Time is working!!!
+2021-09-09 16:16:12,697 Time is working!!!
+2021-09-09 16:16:12,724 Time is working!!!
+2021-09-09 16:16:12,754 Time is working!!!
+2021-09-09 16:16:12,784 Time is working!!!
+2021-09-09 16:16:12,815 Time is working!!!
+2021-09-09 16:16:12,845 Time is working!!!
+2021-09-09 16:16:12,874 Time is working!!!
+2021-09-09 16:16:12,899 Time is working!!!
+2021-09-09 16:16:12,927 Time is working!!!
+2021-09-09 16:16:12,956 Time is working!!!
+2021-09-09 16:16:12,989 Time is working!!!
+2021-09-09 16:16:13,021 Time is working!!!
+2021-09-09 16:16:13,051 Time is working!!!
+2021-09-09 16:16:13,079 Time is working!!!
+2021-09-09 16:16:13,106 Time is working!!!
+2021-09-09 16:16:13,133 Time is working!!!
+2021-09-09 16:16:13,159 Time is working!!!
+2021-09-09 16:16:13,188 Time is working!!!
+2021-09-09 16:16:13,220 Time is working!!!
+2021-09-09 16:16:13,248 Time is working!!!
+2021-09-09 16:16:13,279 Time is working!!!
+2021-09-09 16:16:13,306 Time is working!!!
+2021-09-09 16:16:13,334 Time is working!!!
+2021-09-09 16:16:13,363 Time is working!!!
+2021-09-09 16:16:13,401 Time is working!!!
+2021-09-09 16:16:13,429 Time is working!!!
+2021-09-09 16:16:13,456 Time is working!!!
+2021-09-09 16:16:13,492 Time is working!!!
+2021-09-09 16:16:13,521 Time is working!!!
+2021-09-09 16:16:13,556 Time is working!!!
+2021-09-09 16:16:13,584 Time is working!!!
+2021-09-09 16:16:13,610 Time is working!!!
+2021-09-09 16:16:13,639 Time is working!!!
+2021-09-09 16:16:13,670 Time is working!!!
+2021-09-09 16:16:13,702 Time is working!!!
+2021-09-09 16:16:13,736 Time is working!!!
+2021-09-09 16:16:13,762 Time is working!!!
+2021-09-09 16:16:13,796 Time is working!!!
+2021-09-09 16:16:13,824 Time is working!!!
+2021-09-09 16:16:13,855 Time is working!!!
+2021-09-09 16:16:13,884 Time is working!!!
+2021-09-09 16:16:13,914 Time is working!!!
+2021-09-09 16:16:13,940 Time is working!!!
+2021-09-09 16:16:13,968 Time is working!!!
+2021-09-09 16:16:13,995 Time is working!!!
+2021-09-09 16:16:14,061 Time is working!!!
+2021-09-09 16:16:14,115 Time is working!!!
+2021-09-09 16:16:14,146 Time is working!!!
+2021-09-09 16:16:14,175 Time is working!!!
+2021-09-09 16:16:14,210 Time is working!!!
+2021-09-09 16:16:14,241 Time is working!!!
+2021-09-09 16:16:14,269 Time is working!!!
+2021-09-09 16:16:14,296 Time is working!!!
+2021-09-09 16:16:14,326 Time is working!!!
+2021-09-09 16:16:14,355 Time is working!!!
+2021-09-09 16:16:14,385 Time is working!!!
+2021-09-09 16:16:14,416 Time is working!!!
+2021-09-09 16:16:14,450 Time is working!!!
+2021-09-09 16:16:14,478 Time is working!!!
+2021-09-09 16:16:14,506 Time is working!!!
+2021-09-09 16:16:14,540 Time is working!!!
+2021-09-09 16:16:14,575 Time is working!!!
+2021-09-09 16:16:14,604 Time is working!!!
+2021-09-09 16:16:14,637 Time is working!!!
+2021-09-09 16:16:14,670 Time is working!!!
+2021-09-09 16:16:14,697 Time is working!!!
+2021-09-09 16:16:14,727 Time is working!!!
+2021-09-09 16:16:14,757 Time is working!!!
+2021-09-09 16:16:14,788 Time is working!!!
+2021-09-09 16:16:14,815 Time is working!!!
+2021-09-09 16:16:14,845 Time is working!!!
+2021-09-09 16:16:14,874 Time is working!!!
+2021-09-09 16:16:14,904 Time is working!!!
+2021-09-09 16:16:14,934 Time is working!!!
+2021-09-09 16:16:14,962 Time is working!!!
+2021-09-09 16:16:14,990 Time is working!!!
+2021-09-09 16:16:15,038 Time is working!!!
+2021-09-09 16:16:15,069 Time is working!!!
+2021-09-09 16:16:15,104 Time is working!!!
+2021-09-09 16:16:15,135 Time is working!!!
+2021-09-09 16:16:15,166 Time is working!!!
+2021-09-09 16:16:15,197 Time is working!!!
+2021-09-09 16:16:15,225 Time is working!!!
+2021-09-09 16:16:15,251 Time is working!!!
+2021-09-09 16:16:15,278 Time is working!!!
+2021-09-09 16:16:15,308 Time is working!!!
+2021-09-09 16:16:15,332 Time is working!!!
+2021-09-09 16:16:15,364 Time is working!!!
+2021-09-09 16:16:15,397 Time is working!!!
+2021-09-09 16:16:15,428 Time is working!!!
+2021-09-09 16:16:15,456 Time is working!!!
+2021-09-09 16:16:15,483 Time is working!!!
+2021-09-09 16:16:15,512 Time is working!!!
+2021-09-09 16:16:15,543 Time is working!!!
+2021-09-09 16:16:15,575 Time is working!!!
+2021-09-09 16:16:15,605 Time is working!!!
+2021-09-09 16:16:15,632 Time is working!!!
+2021-09-09 16:16:15,669 Time is working!!!
+2021-09-09 16:16:15,697 Time is working!!!
+2021-09-09 16:16:15,725 Time is working!!!
+2021-09-09 16:16:15,752 Time is working!!!
+2021-09-09 16:16:15,779 Time is working!!!
+2021-09-09 16:16:15,811 Time is working!!!
+2021-09-09 16:16:15,841 Time is working!!!
+2021-09-09 16:16:15,872 Time is working!!!
+2021-09-09 16:16:15,898 Time is working!!!
+2021-09-09 16:16:15,943 Time is working!!!
+2021-09-09 16:16:15,987 Time is working!!!
+2021-09-09 16:16:16,020 Time is working!!!
+2021-09-09 16:16:16,048 Time is working!!!
+2021-09-09 16:16:16,077 Time is working!!!
+2021-09-09 16:16:16,107 Time is working!!!
+2021-09-09 16:16:16,134 Time is working!!!
+2021-09-09 16:16:16,161 Time is working!!!
+2021-09-09 16:16:16,190 Time is working!!!
+2021-09-09 16:16:16,224 Time is working!!!
+2021-09-09 16:16:16,250 Time is working!!!
+2021-09-09 16:16:16,278 Time is working!!!
+2021-09-09 16:16:16,308 Time is working!!!
+2021-09-09 16:16:16,338 Time is working!!!
+2021-09-09 16:16:16,365 Time is working!!!
+2021-09-09 16:16:16,396 Time is working!!!
+2021-09-09 16:16:16,424 Time is working!!!
+2021-09-09 16:16:16,450 Time is working!!!
+2021-09-09 16:16:16,477 Time is working!!!
+2021-09-09 16:16:16,505 Time is working!!!
+2021-09-09 16:16:16,536 Time is working!!!
+2021-09-09 16:16:16,567 Time is working!!!
+2021-09-09 16:16:16,598 Time is working!!!
+2021-09-09 16:16:16,625 Time is working!!!
+2021-09-09 16:16:16,651 Time is working!!!
+2021-09-09 16:16:16,679 Time is working!!!
+2021-09-09 16:16:16,709 Time is working!!!
+2021-09-09 16:16:16,739 Time is working!!!
+2021-09-09 16:16:16,774 Time is working!!!
+2021-09-09 16:16:16,803 Time is working!!!
+2021-09-09 16:16:16,835 Time is working!!!
+2021-09-09 16:16:16,861 Time is working!!!
+2021-09-09 16:16:16,889 Time is working!!!
+2021-09-09 16:16:16,918 Time is working!!!
+2021-09-09 16:16:16,945 Time is working!!!
+2021-09-09 16:16:16,973 Time is working!!!
+2021-09-09 16:16:17,004 Time is working!!!
+2021-09-09 16:16:17,037 Time is working!!!
+2021-09-09 16:16:17,068 Time is working!!!
+2021-09-09 16:16:17,094 Time is working!!!
+2021-09-09 16:16:17,123 Time is working!!!
+2021-09-09 16:16:17,150 Time is working!!!
+2021-09-09 16:16:17,176 Time is working!!!
+2021-09-09 16:16:17,203 Time is working!!!
+2021-09-09 16:16:17,236 Time is working!!!
+2021-09-09 16:16:17,268 Time is working!!!
+2021-09-09 16:16:17,299 Time is working!!!
+2021-09-09 16:16:17,325 Time is working!!!
+2021-09-09 16:16:17,353 Time is working!!!
+2021-09-09 16:16:17,380 Time is working!!!
+2021-09-09 16:16:17,405 Time is working!!!
+2021-09-09 16:16:17,433 Time is working!!!
+2021-09-09 16:16:17,462 Time is working!!!
+2021-09-09 16:16:17,495 Time is working!!!
+2021-09-09 16:16:17,528 Time is working!!!
+2021-09-09 16:16:17,557 Time is working!!!
+2021-09-09 16:16:17,582 Time is working!!!
+2021-09-09 16:16:17,610 Time is working!!!
+2021-09-09 16:16:17,638 Time is working!!!
+2021-09-09 16:16:17,667 Time is working!!!
+2021-09-09 16:16:17,696 Time is working!!!
+2021-09-09 16:16:17,727 Time is working!!!
+2021-09-09 16:16:17,754 Time is working!!!
+2021-09-09 16:16:17,784 Time is working!!!
+2021-09-09 16:16:17,810 Time is working!!!
+2021-09-09 16:16:17,838 Time is working!!!
+2021-09-09 16:16:17,864 Time is working!!!
+2021-09-09 16:16:17,888 Time is working!!!
+2021-09-09 16:16:17,920 Time is working!!!
+2021-09-09 16:16:17,955 Time is working!!!
+2021-09-09 16:16:17,988 Time is working!!!
+2021-09-09 16:16:18,018 Time is working!!!
+2021-09-09 16:16:18,049 Time is working!!!
+2021-09-09 16:16:18,075 Time is working!!!
+2021-09-09 16:16:18,104 Time is working!!!
+2021-09-09 16:16:18,133 Time is working!!!
+2021-09-09 16:16:18,162 Time is working!!!
+2021-09-09 16:16:18,193 Time is working!!!
+2021-09-09 16:16:18,222 Time is working!!!
+2021-09-09 16:16:18,250 Time is working!!!
+2021-09-09 16:16:18,276 Time is working!!!
+2021-09-09 16:16:18,303 Time is working!!!
+2021-09-09 16:16:18,330 Time is working!!!
+2021-09-09 16:16:18,359 Time is working!!!
+2021-09-09 16:16:18,387 Time is working!!!
+2021-09-09 16:16:18,421 Time is working!!!
+2021-09-09 16:16:18,454 Time is working!!!
+2021-09-09 16:16:18,482 Time is working!!!
+2021-09-09 16:16:18,509 Time is working!!!
+2021-09-09 16:16:18,533 Time is working!!!
+2021-09-09 16:16:18,559 Time is working!!!
+2021-09-09 16:16:18,585 Time is working!!!
+2021-09-09 16:16:18,615 Time is working!!!
+2021-09-09 16:16:18,648 Time is working!!!
+2021-09-09 16:16:18,678 Time is working!!!
+2021-09-09 16:16:18,707 Time is working!!!
+2021-09-09 16:16:18,733 Time is working!!!
+2021-09-09 16:16:18,764 Time is working!!!
+2021-09-09 16:16:18,798 Time is working!!!
+2021-09-09 16:16:18,826 Time is working!!!
+2021-09-09 16:16:18,855 Time is working!!!
+2021-09-09 16:16:18,884 Time is working!!!
+2021-09-09 16:16:18,918 Time is working!!!
+2021-09-09 16:16:18,954 Time is working!!!
+2021-09-09 16:16:18,983 Time is working!!!
+2021-09-09 16:16:19,013 Time is working!!!
+2021-09-09 16:16:19,044 Time is working!!!
+2021-09-09 16:16:19,071 Time is working!!!
+2021-09-09 16:16:19,098 Time is working!!!
+2021-09-09 16:16:19,129 Time is working!!!
+2021-09-09 16:16:19,160 Time is working!!!
+2021-09-09 16:16:19,194 Time is working!!!
+2021-09-09 16:16:19,223 Time is working!!!
+2021-09-09 16:16:19,252 Time is working!!!
+2021-09-09 16:16:19,280 Time is working!!!
+2021-09-09 16:16:19,307 Time is working!!!
+2021-09-09 16:16:19,335 Time is working!!!
+2021-09-09 16:16:19,365 Time is working!!!
+2021-09-09 16:16:19,397 Time is working!!!
+2021-09-09 16:16:19,431 Time is working!!!
+2021-09-09 16:16:19,458 Time is working!!!
+2021-09-09 16:16:19,494 Time is working!!!
+2021-09-09 16:16:19,527 Time is working!!!
+2021-09-09 16:16:19,555 Time is working!!!
+2021-09-09 16:16:19,585 Time is working!!!
+2021-09-09 16:16:19,618 Time is working!!!
+2021-09-09 16:16:19,653 Time is working!!!
+2021-09-09 16:16:19,682 Time is working!!!
+2021-09-09 16:16:19,707 Time is working!!!
+2021-09-09 16:16:19,735 Time is working!!!
+2021-09-09 16:16:19,762 Time is working!!!
+2021-09-09 16:16:19,782 ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure')
+Traceback (most recent call last):
+  File "testing.py", line 42, in connections
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2454, in __init__
+    self.connect(connectString, autocommit, ansi, timeout, unicode_results, readonly)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2532, in connect
+    self.update_db_special_info()
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2595, in update_db_special_info
+    cur.close()
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 2372, in close
+    check_success(self, ret)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 1007, in check_success
+    ctrl_err(SQL_HANDLE_STMT, ODBC_obj.stmt_h, ret, ODBC_obj.ansi)
+  File "/home/agate/.local/lib/python3.6/site-packages/pypyodbc.py", line 987, in ctrl_err
+    raise DatabaseError(state,err_text)
+pypyodbc.DatabaseError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure')
+2021-09-09 16:16:19,785 None
+2021-09-09 16:16:19,794 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "testing.py", line 23, in endlessLoop
+    cursor = connBool.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+2021-09-09 16:16:19,794 None
+2021-09-09 16:16:19,826 Time is working!!!
+2021-09-09 16:16:19,853 Time is working!!!
+2021-09-09 16:16:19,887 Time is working!!!
+2021-09-09 16:16:19,917 Time is working!!!
+2021-09-09 16:16:19,945 Time is working!!!
+2021-09-09 16:16:19,972 Time is working!!!
+2021-09-09 16:16:19,996 Time is working!!!
+2021-09-09 16:16:20,022 Time is working!!!
+2021-09-09 16:16:20,050 Time is working!!!
+2021-09-09 16:16:20,085 Time is working!!!
+2021-09-09 16:16:20,112 Time is working!!!
+2021-09-09 16:16:20,145 Time is working!!!
+2021-09-09 16:16:20,171 Time is working!!!
+2021-09-09 16:16:20,197 Time is working!!!
+2021-09-09 16:16:20,222 Time is working!!!
+2021-09-09 16:16:20,248 Time is working!!!
+2021-09-09 16:16:20,275 Time is working!!!
+2021-09-09 16:16:20,304 Time is working!!!
+2021-09-09 16:16:20,331 Time is working!!!
+2021-09-09 16:16:20,361 Time is working!!!
+2021-09-09 16:16:20,391 Time is working!!!
+2021-09-09 16:16:20,417 Time is working!!!
+2021-09-09 16:16:20,444 Time is working!!!
+2021-09-09 16:16:20,471 Time is working!!!
+2021-09-09 16:16:20,495 Time is working!!!
+2021-09-09 16:16:20,521 Time is working!!!
+2021-09-09 16:16:20,550 Time is working!!!
+2021-09-09 16:16:20,580 Time is working!!!
+2021-09-09 16:16:20,611 Time is working!!!
+2021-09-09 16:16:20,640 Time is working!!!
+2021-09-09 16:16:20,666 Time is working!!!
+2021-09-09 16:16:20,691 Time is working!!!
+2021-09-09 16:16:20,718 Time is working!!!
+2021-09-09 16:16:20,744 Time is working!!!
+2021-09-09 16:16:20,771 Time is working!!!
+2021-09-09 16:16:20,804 Time is working!!!
+2021-09-09 16:16:20,838 Time is working!!!
+2021-09-09 16:16:20,867 Time is working!!!
+2021-09-09 16:16:20,893 Time is working!!!
+2021-09-09 16:16:20,917 Time is working!!!
+2021-09-09 16:16:20,944 Time is working!!!
+2021-09-09 16:16:20,973 Time is working!!!
+2021-09-09 16:16:21,003 Time is working!!!
+2021-09-09 16:16:21,038 Time is working!!!
+2021-09-09 16:16:21,072 Time is working!!!
+2021-09-09 16:16:21,101 Time is working!!!
+2021-09-09 16:16:21,127 Time is working!!!
+2021-09-09 16:16:21,153 Time is working!!!
+2021-09-09 16:16:21,181 Time is working!!!
+2021-09-09 16:16:21,208 Time is working!!!
+2021-09-09 16:16:21,236 Time is working!!!
+2021-09-09 16:16:21,268 Time is working!!!
+2021-09-09 16:16:21,300 Time is working!!!
+2021-09-09 16:16:21,331 Time is working!!!
+2021-09-09 16:16:21,357 Time is working!!!
+2021-09-09 16:16:21,384 Time is working!!!
+2021-09-09 16:16:21,410 Time is working!!!
+2021-09-09 16:16:21,435 Time is working!!!
+2021-09-09 16:16:21,462 Time is working!!!
+2021-09-09 16:16:21,491 Time is working!!!
+2021-09-09 16:16:21,522 Time is working!!!
+2021-09-09 16:16:21,556 Time is working!!!
+2021-09-09 16:16:21,585 Time is working!!!
+2021-09-09 16:16:21,615 Time is working!!!
+2021-09-09 16:16:21,643 Time is working!!!
+2021-09-09 16:16:21,667 Time is working!!!
+2021-09-09 16:16:21,693 Time is working!!!
+2021-09-09 16:16:21,721 Time is working!!!
+2021-09-09 16:16:21,750 Time is working!!!
+2021-09-09 16:16:21,778 Time is working!!!
+2021-09-09 16:16:21,811 Time is working!!!
+2021-09-09 16:16:21,837 Time is working!!!
+2021-09-09 16:16:21,864 Time is working!!!
+2021-09-09 16:16:21,892 Time is working!!!
+2021-09-09 16:16:21,918 Time is working!!!
+2021-09-09 16:16:21,945 Time is working!!!
+2021-09-09 16:16:21,973 Time is working!!!
+2021-09-09 16:16:22,003 Time is working!!!
+2021-09-09 16:16:22,036 Time is working!!!
+2021-09-09 16:16:22,062 Time is working!!!
+2021-09-09 16:16:22,088 Time is working!!!
+2021-09-09 16:16:22,113 Time is working!!!
+2021-09-09 16:16:22,138 Time is working!!!
+2021-09-09 16:16:22,162 Time is working!!!
+2021-09-09 16:16:22,191 Time is working!!!
+2021-09-09 16:16:22,220 Time is working!!!
+2021-09-09 16:16:22,253 Time is working!!!
+2021-09-09 16:16:22,284 Time is working!!!
+2021-09-09 16:16:22,310 Time is working!!!
+2021-09-09 16:16:22,339 Time is working!!!
+2021-09-09 16:16:22,366 Time is working!!!
+2021-09-09 16:16:22,391 Time is working!!!
+2021-09-09 16:16:22,418 Time is working!!!
+2021-09-09 16:16:22,452 Time is working!!!
+2021-09-09 16:16:22,483 Time is working!!!
+2021-09-09 16:16:22,513 Time is working!!!
+2021-09-09 16:16:22,538 Time is working!!!
+2021-09-09 16:16:22,567 Time is working!!!
+2021-09-09 16:16:22,594 Time is working!!!
+2021-09-09 16:16:22,620 Time is working!!!
+2021-09-09 16:16:22,649 Time is working!!!
