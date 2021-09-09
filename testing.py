@@ -19,7 +19,7 @@ def endlessLoop():
   while(a):
     timeLocal = time.strftime('%H:%M:%S', time.localtime())
     try:
-      if timeLocal>startTime and timeLocal<endTime:
+      if timeLocal>=startTime and timeLocal<=endTime:
         connBool = connections()
         cursor = connBool.cursor()
         cursor.execute('''INSERT INTO testTable(FirstName,LastName) VALUES
@@ -45,7 +45,7 @@ def connections():
       'Server=localhost;'
       'Database=TestDB;'
       'uid=sa;pwd=AgateZiedina2*')
-    logFileWriting('Database connection successful!')
+    #logFileWriting('Database connection successful!')
   except Exception as e:
     #message = sys.exc_info()[2]
     logFileWriting(logging.exception(e))  #full error message
