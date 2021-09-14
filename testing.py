@@ -70,31 +70,51 @@ def create_table(connectionBool):
     firstName = 'ecr_cheques_items_2333'
     curDate = time.strftime('%Y%m')
     tableName = "%s_%s" % (firstName, curDate)
-    cursor.execute('''CREATE TABLE if not exists {} (
-        id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, 
-        cheque_id INT UNSIGNED NOT NULL, 
-        product_id INT UNSIGNED NOT NULL, 
-        department_id INT UNSIGNED NOT NULL, 
-        unit_id INT UNSIGNED NOT NULL, 
-        vat_id INT UNSIGNED NOT NULL, 
-        price DECIMAL(10, 3) NOT NULL, 
-        count DECIMAL(13, 5) NOT NULL, 
-        sum DECIMAL(12, 3) NOT NULL, 
-        discount DECIMAL(10, 3) NOT NULL, 
-        created_at TIMESTAMP DEFAULT 0 NOT NULL,
-        updated_at TIMESTAMP DEFAULT 0 NOT NULL) DEFAULT CHARACTER SET UTF8 COLLATE UTF8_UNICODE_CI;'''.format(tableName)) 
-    connectionBool.commit()
-    cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_cheque_id_index`(`cheque_id`);'''.format(tableName))
-    connectionBool.commit()
-    cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_product_id_index`(`product_id`);'''.format(tableName))
-    connectionBool.commit()
-    cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_department_id_index`(`department_id`);'''.format(tableName))
-    connectionBool.commit()
-    cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_unit_id_index`(`unit_id`);'''.format(tableName))
-    connectionBool.commit()
-    cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_vat_id_index`(`vat_id`);'''.format(tableName))
-    connectionBool.commit()
-    connectionBool.close()
+    someCount=cursor.execute('''SELECT COUNT(*)
+        FROM information_schema.tables 
+        WHERE table_schema = 'project'
+        AND table_name = '{}' LIMIT 0;'''.format(tableName))
+    #cursor.execute(
+       # """SELECT count(*)
+        #FROM information_schema.TABLES
+        #WHERE (TABLE_SCHEMA = 'project') AND (TABLE_NAME = '{}')""".format(tableName))
+    print("pirms")
+    print(cursor.fetchone())
+    #result =str(cursor.fetchone())
+    #print("te", someCount)
+    if cursor.fetchone()[0] == 0:
+      print("sakums")
+      print(cursor.fetchone())
+      cursor.execute('''CREATE TABLE {} (
+          id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+          cheque_id INT UNSIGNED NOT NULL, 
+          product_id INT UNSIGNED NOT NULL, 
+          department_id INT UNSIGNED NOT NULL, 
+          unit_id INT UNSIGNED NOT NULL, 
+          vat_id INT UNSIGNED NOT NULL, 
+          price DECIMAL(10, 3) NOT NULL, 
+          count DECIMAL(13, 5) NOT NULL, 
+          sum DECIMAL(12, 3) NOT NULL, 
+          discount DECIMAL(10, 3) NOT NULL, 
+          created_at TIMESTAMP DEFAULT 0 NOT NULL,
+          updated_at TIMESTAMP DEFAULT 0 NOT NULL) DEFAULT CHARACTER SET UTF8 COLLATE UTF8_UNICODE_CI;'''.format(tableName)) 
+      connectionBool.commit()
+      cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_cheque_id_index`(`cheque_id`);'''.format(tableName))
+      connectionBool.commit()
+      cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_product_id_index`(`product_id`);'''.format(tableName))
+      connectionBool.commit()
+      cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_department_id_index`(`department_id`);'''.format(tableName))
+      connectionBool.commit()
+      cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_unit_id_index`(`unit_id`);'''.format(tableName))
+      connectionBool.commit()
+      cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_vat_id_index`(`vat_id`);'''.format(tableName))
+      connectionBool.commit()
+      connectionBool.close()
+    else:
+      print("beigas")
+      print(cursor.fetchone()) 
+      connectionBool.close()
+      print("EXISTS")
     logFileWriting('TABLE Successful CREATED')
   except Exception as e:
     #message = sys.exc_info()[2]
