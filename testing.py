@@ -3,6 +3,7 @@ import pypyodbc
 import mariadb
 import logging
 import time
+import datetime
 
 def logFileWriting(txt):
   logging.basicConfig(filename="someLogFile.log",
@@ -65,8 +66,11 @@ def create_table(connectionBool):
    # cursor.execute('''CREATE TABLE testTable(
         #FirstName TEXT NOT NULL,
        # LastName  TEXT NOT NULL );''')
-
-    cursor.execute('''CREATE TABLE if not exists ecr_cheques_items_2333_202104 (
+  
+    firstName = 'ecr_cheques_items_2333'
+    curDate = time.strftime('%Y%m')
+    tableName = "%s_%s" % (firstName, curDate)
+    cursor.execute('''CREATE TABLE if not exists {} (
         id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, 
         cheque_id INT UNSIGNED NOT NULL, 
         product_id INT UNSIGNED NOT NULL, 
@@ -78,17 +82,17 @@ def create_table(connectionBool):
         sum DECIMAL(12, 3) NOT NULL, 
         discount DECIMAL(10, 3) NOT NULL, 
         created_at TIMESTAMP DEFAULT 0 NOT NULL,
-        updated_at TIMESTAMP DEFAULT 0 NOT NULL) DEFAULT CHARACTER SET UTF8 COLLATE UTF8_UNICODE_CI;''')
+        updated_at TIMESTAMP DEFAULT 0 NOT NULL) DEFAULT CHARACTER SET UTF8 COLLATE UTF8_UNICODE_CI;'''.format(tableName)) 
     connectionBool.commit()
-    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index if not exists `ecr_cheques_items_cheque_id_index`(`cheque_id`);''')
+    cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_cheque_id_index`(`cheque_id`);'''.format(tableName))
     connectionBool.commit()
-    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index if not exists `ecr_cheques_items_product_id_index`(`product_id`);''')
+    cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_product_id_index`(`product_id`);'''.format(tableName))
     connectionBool.commit()
-    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index if not exists `ecr_cheques_items_department_id_index`(`department_id`);''')
+    cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_department_id_index`(`department_id`);'''.format(tableName))
     connectionBool.commit()
-    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index if not exists `ecr_cheques_items_unit_id_index`(`unit_id`);''')
+    cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_unit_id_index`(`unit_id`);'''.format(tableName))
     connectionBool.commit()
-    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index if not exists `ecr_cheques_items_vat_id_index`(`vat_id`);''')
+    cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_vat_id_index`(`vat_id`);'''.format(tableName))
     connectionBool.commit()
    # connectionBool.close()
     logFileWriting('TABLE Successful CREATED')
