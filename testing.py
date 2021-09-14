@@ -66,7 +66,7 @@ def create_table(connectionBool):
         #FirstName TEXT NOT NULL,
        # LastName  TEXT NOT NULL );''')
 
-    cursor.execute('''CREATE TABLE ecr_cheques_items_2333_202104 (
+    cursor.execute('''CREATE TABLE if not exists ecr_cheques_items_2333_202104 (
         id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, 
         cheque_id INT UNSIGNED NOT NULL, 
         product_id INT UNSIGNED NOT NULL, 
@@ -80,15 +80,15 @@ def create_table(connectionBool):
         created_at TIMESTAMP DEFAULT 0 NOT NULL,
         updated_at TIMESTAMP DEFAULT 0 NOT NULL) DEFAULT CHARACTER SET UTF8 COLLATE UTF8_UNICODE_CI;''')
     connectionBool.commit()
-    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index `ecr_cheques_items_cheque_id_index`(`cheque_id`);''')
+    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index if not exists `ecr_cheques_items_cheque_id_index`(`cheque_id`);''')
     connectionBool.commit()
-    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index `ecr_cheques_items_product_id_index`(`product_id`);''')
+    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index if not exists `ecr_cheques_items_product_id_index`(`product_id`);''')
     connectionBool.commit()
-    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index `ecr_cheques_items_department_id_index`(`department_id`);''')
+    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index if not exists `ecr_cheques_items_department_id_index`(`department_id`);''')
     connectionBool.commit()
-    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index `ecr_cheques_items_unit_id_index`(`unit_id`);''')
+    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index if not exists `ecr_cheques_items_unit_id_index`(`unit_id`);''')
     connectionBool.commit()
-    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index `ecr_cheques_items_vat_id_index`(`vat_id`);''')
+    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index if not exists `ecr_cheques_items_vat_id_index`(`vat_id`);''')
     connectionBool.commit()
    # connectionBool.close()
     logFileWriting('TABLE Successful CREATED')
