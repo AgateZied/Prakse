@@ -94,7 +94,7 @@ def create_table(connectionBool):
     connectionBool.commit()
     cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_vat_id_index`(`vat_id`);'''.format(tableName))
     connectionBool.commit()
-   # connectionBool.close()
+    connectionBool.close()
     logFileWriting('TABLE Successful CREATED')
   except Exception as e:
     #message = sys.exc_info()[2]
