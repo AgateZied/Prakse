@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import pypyodbc
+import mariadb
 import logging
 import time
 
@@ -13,7 +14,6 @@ def logFileWriting(txt):
 
 def endlessLoop():
   a=bool(True)
-
   startTime = time.strftime('07:00:00', time.localtime())
   endTime = time.strftime('22:00:00', time.localtime())
   while(a):
@@ -28,23 +28,29 @@ def endlessLoop():
         cursor.execute('''DELETE FROM testTable ''')
         connBool.commit()
         connBool.close()
-        #logFileWriting('Time is working!!!')
+        logFileWriting('Is working in loop!!!')
       else:
-        #logFileWriting('Time period do not work!')
-        time.sleep(32400)
-        #logFileWriting('!!!!!')
+        logFileWriting('Out of time period!!')
+        time.sleep(32400) # 9h from 22-07.00
         #logFileWriting(timeLocal)
       #a = False
     except Exception as e:
       logFileWriting(logging.exception(e))  # full error message
       #a = False
+
 def connections():
   conn = None
   try:
-    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
-      'Server=localhost;'
-      'Database=TestDB;'
-      'uid=sa;pwd=AgateZiedina2*')
+    conn = mariadb.connect(
+        user="root",
+        host="localhost",
+        password='',
+        port=3306,
+        database="project")
+    #conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+     # 'Server=localhost;'
+      #'Database=TestDB;'
+      #'uid=sa;pwd=AgateZiedina2*')
     #logFileWriting('Database connection successful!')
   except Exception as e:
     #message = sys.exc_info()[2]
@@ -56,9 +62,33 @@ def connections():
 def create_table(connectionBool):
   try:
     cursor = connectionBool.cursor()
-    cursor.execute('''CREATE TABLE testTable(
-        FirstName TEXT NOT NULL,
-        LastName  TEXT NOT NULL );''')
+   # cursor.execute('''CREATE TABLE testTable(
+        #FirstName TEXT NOT NULL,
+       # LastName  TEXT NOT NULL );''')
+
+    cursor.execute('''CREATE TABLE ecr_cheques_items_2333_202104 (
+        id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+        cheque_id INT UNSIGNED NOT NULL, 
+        product_id INT UNSIGNED NOT NULL, 
+        department_id INT UNSIGNED NOT NULL, 
+        unit_id INT UNSIGNED NOT NULL, 
+        vat_id INT UNSIGNED NOT NULL, 
+        price DECIMAL(10, 3) NOT NULL, 
+        count DECIMAL(13, 5) NOT NULL, 
+        sum DECIMAL(12, 3) NOT NULL, 
+        discount DECIMAL(10, 3) NOT NULL, 
+        created_at TIMESTAMP DEFAULT 0 NOT NULL,
+        updated_at TIMESTAMP DEFAULT 0 NOT NULL) DEFAULT CHARACTER SET UTF8 COLLATE UTF8_UNICODE_CI;''')
+    connectionBool.commit()
+    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index `ecr_cheques_items_cheque_id_index`(`cheque_id`);''')
+    connectionBool.commit()
+    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index `ecr_cheques_items_product_id_index`(`product_id`);''')
+    connectionBool.commit()
+    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index `ecr_cheques_items_department_id_index`(`department_id`);''')
+    connectionBool.commit()
+    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index `ecr_cheques_items_unit_id_index`(`unit_id`);''')
+    connectionBool.commit()
+    cursor.execute('''alter table ecr_cheques_items_2333_202104 add index `ecr_cheques_items_vat_id_index`(`vat_id`);''')
     connectionBool.commit()
    # connectionBool.close()
     logFileWriting('TABLE Successful CREATED')
@@ -83,9 +113,9 @@ def insert_table(connectionBool):
 
 def main():
   print("Hello!")
-  endlessLoop()
-  #connBool =connections()
-  #create_table(connBool)
+  #endlessLoop()
+  connBool =connections()
+  create_table(connBool)
   #insert_table(connBool)
 """
   if bool(connBool):
