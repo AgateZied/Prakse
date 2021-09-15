@@ -5,6 +5,7 @@ import logging
 import time
 import datetime
 
+#logfailu izveido un ieraksta tajā padoto info
 def logFileWriting(txt):
   logging.basicConfig(filename="someLogFile.log",
     format='%(asctime)s %(message)s',
@@ -13,24 +14,30 @@ def logFileWriting(txt):
   logger.setLevel(logging.DEBUG)
   logger.info(txt)
 
+#nebeidzamais loops, kurš iet no 7-22 dienā
 def endlessLoop():
   a=bool(True)
   startTime = time.strftime('07:00:00', time.localtime())
   endTime = time.strftime('22:00:00', time.localtime())
   while(a):
-    timeLocal = time.strftime('%H:%M:%S', time.localtime())
+    #lokālais laiks
+    timeLocal = time.strftime('%H:%M:%S', time.localtime())  
     try:
-      if timeLocal>=startTime and timeLocal<=endTime:
+    #Ja lokālais laiks ir starp sākuma un beigu laika, tad ieies ifā
+      if timeLocal>=startTime and timeLocal<=endTime: 
         connBool = connections()
         cursor = connBool.cursor()
+        #pievieno vērtības db
         cursor.execute('''INSERT INTO testTable(FirstName,LastName) VALUES
           ('Jautrite','bersina')''')
         connBool.commit()
+        #izdzēš visas vērtības no db
         cursor.execute('''DELETE FROM testTable ''')
         connBool.commit()
         connBool.close()
+        #logfaaila funkciju izsauc, lai ierakstītu failā pārbaudes info
         logFileWriting('Is working in loop!!!')
-      else:
+      else: #nav konkrētā laika periodā, aiziet uz miegu uz 9 stundām
         logFileWriting('Out of time period!!')
         time.sleep(32400) # 9h from 22-07.00
         #logFileWriting(timeLocal)
@@ -39,52 +46,76 @@ def endlessLoop():
       logFileWriting(logging.exception(e))  # full error message
       #a = False
 
+#pieslēgšanās serverim funkcija
 def connections():
   conn = None
   try:
+    #pieslēgšanās mariadb serverim dati
     conn = mariadb.connect(
         user="root",
         host="localhost",
         password='',
         port=3306,
         database="project")
-    #conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
-     # 'Server=localhost;'
-      #'Database=TestDB;'
-      #'uid=sa;pwd=AgateZiedina2*')
-    #logFileWriting('Database connection successful!')
+    
+    #pieslēgšanās mssql serverim dati
+    '''
+    conn = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+      'Server=localhost;'
+      'Database=TestDB;'
+      'uid=sa;pwd=AgateZiedina2*')
+    logFileWriting('Database connection successful!')
+    '''
   except Exception as e:
-    #message = sys.exc_info()[2]
+    #message = sys.exc_info()[2] 
     logFileWriting(logging.exception(e))  #full error message
-    #logFileWriting( "Error: %s" % message)
+    #logFileWriting( "Error: %s" % message)  # īsā ziņa logfailā
 
   return conn
 
 def create_table(connectionBool):
   try:
     cursor = connectionBool.cursor()
-   # cursor.execute('''CREATE TABLE testTable(
-        #FirstName TEXT NOT NULL,
-       # LastName  TEXT NOT NULL );''')
   
-    firstName = 'ecr_cheques_items_2333'
-    curDate = time.strftime('%Y%m')
-    tableName = "%s_%s" % (firstName, curDate)
-    someCount=cursor.execute('''SELECT COUNT(*)
-        FROM information_schema.tables 
-        WHERE table_schema = 'project'
-        AND table_name = '{}' LIMIT 0;'''.format(tableName))
-    #cursor.execute(
-       # """SELECT count(*)
-        #FROM information_schema.TABLES
-        #WHERE (TABLE_SCHEMA = 'project') AND (TABLE_NAME = '{}')""".format(tableName))
-    print("pirms")
-    print(cursor.fetchone())
-    #result =str(cursor.fetchone())
-    #print("te", someCount)
-    if cursor.fetchone()[0] == 0:
-      print("sakums")
-      print(cursor.fetchone())
+    firstName = 'ecr_cheques_items_2333' #nemainīgā nosaukuma daļa tabulai
+    curDate = time.strftime('%Y%m') #paņem tekošo mēnesi un gadu
+    tableName = "%s_%s" % (firstName, curDate) # pievieno tekošo mēnesi pilnajam tabulas nosaukumam
+    someCount=cursor.execute('''SHOW TABLES FROM project''')
+
+    #vēl viens variants lai veiktu pārbaudi vai tabula eksistē, bet šis pagaidām nedarbojas
+    '''
+    cursor.execute(
+        """SELECT count(*)
+        FROM information_schema.TABLES
+        WHERE (TABLE_SCHEMA = 'project') AND (TABLE_NAME = '{}')""".format(tableName))
+    '''    
+    #jaatceras, ka fetchall() nedrīkst izmantot vairākas reizes, jo tikai pirmā nostrādās, nākamajās jau parādīsies None vērtības
+    result =cursor.fetchall() #piešķir mainīgajam visus tabulas nosaukumus, kas tika paņemti no db
+    Counter=0 #vajadzīgs, lai nokontrolētu kad drīkstēs un kad nedrīkstēs ifā ieiet. 0=nav tabulu, 1= ir tabula
+    
+    #cikls, kurā iziet cauri visām tabulām un skatās vai ir vienāds tabulas nosaukums ar padotajām
+    for x in result:
+      if x is None: # ja ir None, tad nav nevienas tabulas
+        print("error")
+        connectionBool.close()
+      elif x[0]== tableName: #ja sakrīt nosaukums, tad eksistē jau tāda tabula db
+        #print("vienads", x) #testēšanas pārbaude
+        Counter = 1
+        connectionBool.close() #aizver savienojumu ar db
+        break; # iet ārā no cikla, jo ja ir atrasta viena tabula, tad nav vajadzības meklēt tālāk
+      #print("NAV vienads", x) #testēšanas pārbaude
+    
+    #vēl dažas testa pārbaudes:
+
+    #print("table name:", tableName)
+    #print("counter name: ", someCount)
+    #ja counters=0, tad nav iekš db tabulas, bet ja ir 1, tad neies if
+    if Counter== 0:
+      #vēl dažas pārbaudes:
+      #print("sakums")
+      #print(cursor.fetchone())
+
+      #tiek palaists skripts
       cursor.execute('''CREATE TABLE {} (
           id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, 
           cheque_id INT UNSIGNED NOT NULL, 
@@ -110,17 +141,20 @@ def create_table(connectionBool):
       cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_vat_id_index`(`vat_id`);'''.format(tableName))
       connectionBool.commit()
       connectionBool.close()
-    else:
-      print("beigas")
-      print(cursor.fetchone()) 
-      connectionBool.close()
-      print("EXISTS")
+    #else:
+      #vēl dažas pārbaudes:
+
+      #print("beigas")
+      #print(cursor.fetchone()) 
+      #connectionBool.close()
+      #print("EXISTS")
     logFileWriting('TABLE Successful CREATED')
   except Exception as e:
     #message = sys.exc_info()[2]
     logFileWriting(logging.exception(e))  #full error message
     #logFileWriting("<p>Error: %s</p>" % message) #short error message
 
+#funkcija, kas ievietos ierakstus tabulā
 def insert_table(connectionBool):
   try:
     cursor = connectionBool.cursor()
@@ -136,11 +170,13 @@ def insert_table(connectionBool):
     #logFileWriting( "<p>Error: %s</p>" % message)
 
 def main():
-  print("Hello!")
-  #endlessLoop()
-  connBool =connections()
-  create_table(connBool)
-  #insert_table(connBool)
+ #print("Hello!")
+  #endlessLoop() #lai atkļūdotu, endless loops
+  connBool =connections() #savienojms izveidots
+  create_table(connBool) #tiek veidota jauna tabula
+  #insert_table(connBool) #pievienoti ieraksti tabulā
+  
+#mēģināju izveidot: ja savienojums ar db, tad to noslēgt beigās un ierakstīt logfailā
 """
   if bool(connBool):
     connBool.close()
