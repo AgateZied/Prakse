@@ -79,9 +79,14 @@ def create_table(connectionBool):
   
     firstName = 'ecr_cheques_items_2333' #nemainīgā nosaukuma daļa tabulai
     curDate = time.strftime('%Y%m') #paņem tekošo mēnesi un gadu
-    tableName = "%s_%s" % (firstName, curDate) # pievieno tekošo mēnesi pilnajam tabulas nosaukumam
-    someCount=cursor.execute('''SHOW TABLES FROM project''')
-
+    tableNameOne = ("%s_%s" % (firstName, curDate)) # pievieno tekošo mēnesi pilnajam tabulas nosaukumam
+    tableName = (tableNameOne,) #lai nosaukums tabulai atbilstu, to vajag ielikt kā tupli
+    #tableName = ("ecr_cheques_items_2333_202109",) #tādam jābūt tabulas nosaukumam
+    
+    q="SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_NAME =?" #? zīme vairāk atbilst lai ieliktu mainīgo querijā
+    cursor.execute(q,tableName) #palaiž queriju
+    #cursor.execute('''SHOW TABLES FROM project''') 3vecā versija
+   
     #vēl viens variants lai veiktu pārbaudi vai tabula eksistē, bet šis pagaidām nedarbojas
     '''
     cursor.execute(
@@ -90,32 +95,52 @@ def create_table(connectionBool):
         WHERE (TABLE_SCHEMA = 'project') AND (TABLE_NAME = '{}')""".format(tableName))
     '''    
     #jaatceras, ka fetchall() nedrīkst izmantot vairākas reizes, jo tikai pirmā nostrādās, nākamajās jau parādīsies None vērtības
+    #print("rindA:",cursor.fetchall())
+    
     result =cursor.fetchall() #piešķir mainīgajam visus tabulas nosaukumus, kas tika paņemti no db
     Counter=0 #vajadzīgs, lai nokontrolētu kad drīkstēs un kad nedrīkstēs ifā ieiet. 0=nav tabulu, 1= ir tabula
+    counterTwo=0
     
-    #cikls, kurā iziet cauri visām tabulām un skatās vai ir vienāds tabulas nosaukums ar padotajām
-    for x in result:
-      if x is None: # ja ir None, tad nav nevienas tabulas
+    #print("garums: ",len(result))
+
+  #cikls, kurā iziet cauri visām tabulām un skatās vai ir vienāds tabulas nosaukums ar padoto
+    while (counterTwo<len(result)):
+      
+      if result[counterTwo] is None: # ja ir None, tad nav nevienas tabulas
         print("error")
+        Counter = 1
         connectionBool.close()
-      elif x[0]== tableName: #ja sakrīt nosaukums, tad eksistē jau tāda tabula db
+        break;
+      elif result[counterTwo]== tableName: #ja sakrīt nosaukums, tad eksistē jau tāda tabula db
         #print("vienads", x) #testēšanas pārbaude
         Counter = 1
+        #print("elif iekšā:",counterTwo)
         connectionBool.close() #aizver savienojumu ar db
         break; # iet ārā no cikla, jo ja ir atrasta viena tabula, tad nav vajadzības meklēt tālāk
       #print("NAV vienads", x) #testēšanas pārbaude
+      counterTwo +=1
+      #print("for otrais:",result[counterTwo])
+      
+    #VĒL DAŽAS TESTA PĀRBAUDES:
     
-    #vēl dažas testa pārbaudes:
-
     #print("table name:", tableName)
     #print("counter name: ", someCount)
     #ja counters=0, tad nav iekš db tabulas, bet ja ir 1, tad neies if
+    #print("te counter one:",Counter)
     if Counter== 0:
       #vēl dažas pārbaudes:
       #print("sakums")
       #print(cursor.fetchone())
 
       #tiek palaists skripts
+      #VAJAG NOŅEMT IEKAVAS UN KOMATU NO NOSAUKUMA, LAI PALAISTU ŠO SKRIPTU
+      mainigais=tableName
+      mainigais = str(mainigais).replace("'", "")
+      mainigais = str(mainigais).replace(",", "")
+      mainigais = str(mainigais).replace("(", "")
+      mainigais = str(mainigais).replace(")", "")
+      print("tagad table nosaukums:",mainigais)
+      tableName = mainigais #UZSTĀDĪTS JAUNAIS MAINĪGAIS
       cursor.execute('''CREATE TABLE {} (
           id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, 
           cheque_id INT UNSIGNED NOT NULL, 
