@@ -72,21 +72,18 @@ def connections():
     #logFileWriting( "Error: %s" % message)  # īsā ziņa logfailā
 
   return conn
-
+#FUNKCIJA KAS VEIDO TABULU
 def create_table(connectionBool):
   try:
     cursor = connectionBool.cursor()
-  
-    firstName = 'ecr_cheques_items_2333' #nemainīgā nosaukuma daļa tabulai
     curDate = time.strftime('%Y%m') #paņem tekošo mēnesi un gadu
-    tableNameOne = ("%s_%s" % (firstName, curDate)) # pievieno tekošo mēnesi pilnajam tabulas nosaukumam
-    tableName = (tableNameOne,) #lai nosaukums tabulai atbilstu, to vajag ielikt kā tupli
+    tableName = 'ecr_cheques_items_2333_'+curDate #nemainīgā nosaukuma daļa tabulai
+    #tableNameOne = ("%s_%s" % (firstName, curDate)) # pievieno tekošo mēnesi pilnajam tabulas nosaukumam
+    #tableName = (tableNameOne,) #lai nosaukums tabulai atbilstu, to vajag ielikt kā tupli
     #tableName = ("ecr_cheques_items_2333_202109",) #tādam jābūt tabulas nosaukumam
-    
-    q="SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_NAME =?" #? zīme vairāk atbilst lai ieliktu mainīgo querijā
-    cursor.execute(q,tableName) #palaiž queriju
-    #cursor.execute('''SHOW TABLES FROM project''') 3vecā versija
-   
+    q="SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_NAME ='"+tableName+"';" #? zīme vairāk atbilst lai ieliktu mainīgo querijā
+    cursor.execute(q) #palaiž queriju
+    #cursor.execute('''SHOW TABLES FROM project''') vecā versija
     #vēl viens variants lai veiktu pārbaudi vai tabula eksistē, bet šis pagaidām nedarbojas
     '''
     cursor.execute(
@@ -95,52 +92,15 @@ def create_table(connectionBool):
         WHERE (TABLE_SCHEMA = 'project') AND (TABLE_NAME = '{}')""".format(tableName))
     '''    
     #jaatceras, ka fetchall() nedrīkst izmantot vairākas reizes, jo tikai pirmā nostrādās, nākamajās jau parādīsies None vērtības
-    #print("rindA:",cursor.fetchall())
-    
     result =cursor.fetchall() #piešķir mainīgajam visus tabulas nosaukumus, kas tika paņemti no db
     Counter=0 #vajadzīgs, lai nokontrolētu kad drīkstēs un kad nedrīkstēs ifā ieiet. 0=nav tabulu, 1= ir tabula
     counterTwo=0
-    
-    #print("garums: ",len(result))
-
-  #cikls, kurā iziet cauri visām tabulām un skatās vai ir vienāds tabulas nosaukums ar padoto
-    while (counterTwo<len(result)):
-      
-      if result[counterTwo] is None: # ja ir None, tad nav nevienas tabulas
-        print("error")
-        Counter = 1
-        connectionBool.close()
-        break;
-      elif result[counterTwo]== tableName: #ja sakrīt nosaukums, tad eksistē jau tāda tabula db
-        #print("vienads", x) #testēšanas pārbaude
-        Counter = 1
-        #print("elif iekšā:",counterTwo)
-        connectionBool.close() #aizver savienojumu ar db
-        break; # iet ārā no cikla, jo ja ir atrasta viena tabula, tad nav vajadzības meklēt tālāk
-      #print("NAV vienads", x) #testēšanas pārbaude
-      counterTwo +=1
-      #print("for otrais:",result[counterTwo])
-      
-    #VĒL DAŽAS TESTA PĀRBAUDES:
-    
-    #print("table name:", tableName)
-    #print("counter name: ", someCount)
+    garums=len(result)
     #ja counters=0, tad nav iekš db tabulas, bet ja ir 1, tad neies if
-    #print("te counter one:",Counter)
-    if Counter== 0:
-      #vēl dažas pārbaudes:
-      #print("sakums")
-      #print(cursor.fetchone())
 
-      #tiek palaists skripts
+    if garums==0:
       #VAJAG NOŅEMT IEKAVAS UN KOMATU NO NOSAUKUMA, LAI PALAISTU ŠO SKRIPTU
-      mainigais=tableName
-      mainigais = str(mainigais).replace("'", "")
-      mainigais = str(mainigais).replace(",", "")
-      mainigais = str(mainigais).replace("(", "")
-      mainigais = str(mainigais).replace(")", "")
-      print("tagad table nosaukums:",mainigais)
-      tableName = mainigais #UZSTĀDĪTS JAUNAIS MAINĪGAIS
+      #tiek palaists skripts
       cursor.execute('''CREATE TABLE {} (
           id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, 
           cheque_id INT UNSIGNED NOT NULL, 
@@ -166,13 +126,7 @@ def create_table(connectionBool):
       cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_vat_id_index`(`vat_id`);'''.format(tableName))
       connectionBool.commit()
       connectionBool.close()
-    #else:
-      #vēl dažas pārbaudes:
-
-      #print("beigas")
-      #print(cursor.fetchone()) 
-      #connectionBool.close()
-      #print("EXISTS")
+    
     logFileWriting('TABLE Successful CREATED')
   except Exception as e:
     #message = sys.exc_info()[2]
