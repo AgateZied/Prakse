@@ -64,6 +64,7 @@ def connections():
     xmlTree = ET.parse(filename)
     rootElement = xmlTree.getroot()
     s=(rootElement.find("connectMariadb/connection/add"))
+    some= s[...]
     print(s)
     '''
     for element in rootElement.find("connectMariadb/connection"):
