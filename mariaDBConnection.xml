@@ -1,0 +1,13 @@
+<connectionStrings>
+     <connectMariadb>
+          <connection>
+               <add name="myDatabaseConnection" connectionString="server=localhost;user=root;database=project;port=3306;password= ;" />  
+          </connection>
+          <!--<host>localhost</host>
+          <user>root</user>
+          <password> </password>
+          <port>3306</port>
+          <database>project</database>-->
+          <!--Provider=MYSQL;UID=root;DSN=localhost;PWD= ;DATABASE=project;-->
+     </connectMariadb>
+</connectionStrings>
