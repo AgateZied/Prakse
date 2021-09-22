@@ -4,7 +4,7 @@ import mariadb
 import logging
 import time
 import datetime
-
+import xml.etree.ElementTree as ET
 #logfailu izveido un ieraksta tajā padoto info
 def logFileWriting(txt):
   logging.basicConfig(filename="someLogFile.log",
@@ -51,12 +51,36 @@ def connections():
   conn = None
   try:
     #pieslēgšanās mariadb serverim dati
+    '''
     conn = mariadb.connect(
         user="root",
         host="localhost",
         password='',
         port=3306,
         database="project")
+    '''
+    #conn= mariadb.connect("mariaDBConnection.xml")
+    filename= "mariaDBConnection.xml"
+    xmlTree = ET.parse(filename)
+    rootElement = xmlTree.getroot()
+    s=(rootElement.find("connectMariadb/connection/add"))
+    print(s)
+    '''
+    for element in rootElement.find("connectMariadb/connection"):
+      #someting= rootElemnt.findall("connectMariadb/connection")
+      print(element.text)
+      someting=(element.text)
+    '''
+
+    #print("it is: ", someting)
+    conn=mariadb.connect(s)
+    somethin3=""
+    '''#ja vajag katrā tagā likt visus stringus 
+    for element in rootElemnt.findall("connectMariadb"):
+      print(element.tag)
+      for child in element:
+        print(child.tag ,"=","'",child.text,"'")
+    ''' 
     
     #pieslēgšanās mssql serverim dati
     '''
@@ -99,7 +123,6 @@ def create_table(connectionBool):
     #ja counters=0, tad nav iekš db tabulas, bet ja ir 1, tad neies if
 
     if garums==0:
-      #VAJAG NOŅEMT IEKAVAS UN KOMATU NO NOSAUKUMA, LAI PALAISTU ŠO SKRIPTU
       #tiek palaists skripts
       cursor.execute('''CREATE TABLE {} (
           id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, 
@@ -126,6 +149,7 @@ def create_table(connectionBool):
       cursor.execute('''alter table {} add index if not exists `ecr_cheques_items_vat_id_index`(`vat_id`);'''.format(tableName))
       connectionBool.commit()
       connectionBool.close()
+      
     
     logFileWriting('TABLE Successful CREATED')
   except Exception as e:
