@@ -64,20 +64,14 @@ def connections():
     filename= "mariaDBConnection.xml"
     xmlTree = ET.parse(filename)
     rootElement = xmlTree.getroot()
-    #s=rootElement.find("connectionStrings/connectMariadb/connection/add")
-    #o=rootElement[1].attrib['name']
-    #print(s.attrib['connectionString'])
-    
-    
+
     for element in rootElement.find("connectMariadb/connection"):
       #someting= rootElemnt.findall("connectMariadb/connection")
       k=element.attrib['connectionString']
       k=str(k)
       print(k)
       someting=(k)
-    
 
-    #print("it is: ", someting)
     conn=mariadb.connect(someting)
     somethin3=""
     '''#ja vajag katrā tagā likt visus stringus 
