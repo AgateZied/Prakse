@@ -60,31 +60,22 @@ def connections():
         port=3306,
         database="project")
     '''
-    #conn= mariadb.connect("mariaDBConnection.xml")
+    #SASLĒDZAS AR XML FAILU
     filename= "mariaDBConnection.xml"
     xmlTree = ET.parse(filename)
     rootElement = xmlTree.getroot()
-    #s=rootElement.find("connectionStrings/connectMariadb/connection/add")
-    #o=rootElement[1].attrib['name']
-    #print(s.attrib['connectionString'])
     
-    
+    #IEIET FOR CIKLĀ UN MEKLĒ VAJADZĪGOS ATRIBŪTUS
     for element in rootElement.find("connectMariadb/connection"):
-      #someting= rootElemnt.findall("connectMariadb/connection")
-      #k=element.attrib['connectionString']
-      server=element.attrib['host']
-      user=element.attrib['user']
-      database=element.attrib['database']
-      port=element.attrib['port']
-      password=element.attrib['password']
-      #k=str(k)
-      print(server, user, database, port, password)
-      #someting=(k)
+      server1=(element.attrib['host'])
+      user1=element.attrib['user']
+      database1=element.attrib['database']
+      password1=element.attrib['password']
+      #print(server1, user1, database1, password1)
     
-
-    #print("it is: ", someting)
-    conn=mariadb.connect(server, user, database, port, password)
-    somethin3=""
+# SAVIENOJUMS AR DB
+    conn=mariadb.connect(host=server1,user= user1, database=database1, password=password1)
+ 
     '''#ja vajag katrā tagā likt visus stringus 
     for element in rootElemnt.findall("connectMariadb"):
       print(element.tag)
