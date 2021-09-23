@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+#ConfigurationManager.ConnectionStrings["myDatabaseConnection"].ConnectionString;  
 import pypyodbc
 import mariadb
 import logging
@@ -63,18 +64,21 @@ def connections():
     filename= "mariaDBConnection.xml"
     xmlTree = ET.parse(filename)
     rootElement = xmlTree.getroot()
-    s=(rootElement.find("connectMariadb/connection/add"))
-    some= s[...]
-    print(s)
-    '''
+    #s=rootElement.find("connectionStrings/connectMariadb/connection/add")
+    #o=rootElement[1].attrib['name']
+    #print(s.attrib['connectionString'])
+    
+    
     for element in rootElement.find("connectMariadb/connection"):
       #someting= rootElemnt.findall("connectMariadb/connection")
-      print(element.text)
-      someting=(element.text)
-    '''
+      k=element.attrib['connectionString']
+      k=str(k)
+      print(k)
+      someting=(k)
+    
 
     #print("it is: ", someting)
-    conn=mariadb.connect(s)
+    conn=mariadb.connect(someting)
     somethin3=""
     '''#ja vajag katrā tagā likt visus stringus 
     for element in rootElemnt.findall("connectMariadb"):
