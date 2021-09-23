@@ -1,7 +1,7 @@
 <connectionStrings>
      <connectMariadb>
           <connection>
-               <add name="myDatabaseConnection" providerName="System.Data.SqlClient" host="localhost" user="root" database="project" port="3306" password="" />  
+               <add name="myDatabaseConnection" providerName="System.Data.SqlClient" host="localhost" user="root" database="project" password="" />  
           </connection>
           
           <!--<host>localhost</host>
