@@ -84,7 +84,7 @@ def endlessLoop():
       #a = False
 
 #pieslēgšanās serverim funkcija
-def connections():
+def connections(server1,user1,database1,password1):
   conn = None
   try:
     #pieslēgšanās mariadb serverim dati
@@ -96,11 +96,11 @@ def connections():
         port=3306,
         database="project")
     '''
-    
     #SASLĒDZAS AR XML FAILU mariadb
-    filename= "mariaDBConnection.xml"
-    xmlTree = ET.parse(filename)
-    rootElement = xmlTree.getroot()  #PIEVIENO VISU "KOKU" MAINĪGAJAM
+    #filename= "mariaDBConnection.xml"
+    #filename=content
+    #xmlTree = ET.parse(filename)
+    #rootElement = xmlTree.getroot()  #PIEVIENO VISU "KOKU" MAINĪGAJAM
     
     '''
     for element in rootElement.find("connectMariadb/connection"):
@@ -109,6 +109,7 @@ def connections():
 
     print(bool(some))
     '''
+    '''
     #IEIET FOR CIKLĀ UN MEKLĒ VAJADZĪGOS ATRIBŪTUS
     for element in rootElement.find("connectMariadb/connection"):
       server1=(element.attrib['host'])
@@ -116,7 +117,7 @@ def connections():
       database1=element.attrib['database']
       password1=element.attrib['password']
       #print(server1, user1, database1, password1)
-    
+    '''
 # SAVIENOJUMS AR DB
     conn=mariadb.connect(host=server1,user= user1, database=database1, password=password1)
  
@@ -232,11 +233,25 @@ def main():
   if not stringToUse=="<":
     decrypt(filename, key) #ATŠIFRĒ FAILU
 
-  connBool =connections() #savienojms izveidots
+  xmlTree = ET.parse(filename)
+  rootElement = xmlTree.getroot()  #PIEVIENO VISU "KOKU" MAINĪGAJAM
+  for element in rootElement.find("connectMariadb/connection"):
+      server1=(element.attrib['host'])
+      user1=element.attrib['user']
+      database1=element.attrib['database']
+      password1=element.attrib['password']
+      print(server1, user1, database1, password1)
+  encrypt(filename, key)
+  '''
+  with open('mariaDBConnection.xml') as f:
+    contents = f.read()
+    print(contents)
+  '''
+  connBool =connections(server1,user1,database1,password1) #savienojms izveidots
   create_table(connBool) #tiek veidota jauna tabula
   #insert_table(connBool) #pievienoti ieraksti tabulā
   #FAILU NOŠIFRĒ, KAD VISAS DARBĪBAS IR PABEIGTAS
-  encrypt(filename, key)
+  
 #mēģināju izveidot: ja savienojums ar db, tad to noslēgt beigās un ierakstīt logfailā
 """
   if bool(connBool):
