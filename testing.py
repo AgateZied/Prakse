@@ -6,6 +6,8 @@ import logging
 import time
 import datetime
 import xml.etree.ElementTree as ET
+from cryptography.fernet import Fernet
+import os
 #logfailu izveido un ieraksta tajā padoto info
 def logFileWriting(txt):
   logging.basicConfig(filename="someLogFile.log",
@@ -14,6 +16,40 @@ def logFileWriting(txt):
   logger=logging.getLogger()
   logger.setLevel(logging.DEBUG)
   logger.info(txt)
+#FUNKCIJAS KAS UZĢENERĒ ATSLĒGU ŠIFRĒŠANAI
+def write_key():
+    key = Fernet.generate_key()
+    #IERAKSTA FAILĀ ATSSLĒGU
+    with open("key.key", "wb") as key_file:
+        key_file.write(key)
+#FUNKCIJAS KAS IELĀDĒ ATSLĒGU NO ESOŠA KEY FAILA
+def load_key():
+
+    return open("key.key", "rb").read()
+#FUNKCIJAS KAS NOŠIFRĒ FAILU
+def encrypt(filename, key):
+
+    f = Fernet(key)
+    with open(filename, "rb") as file:
+        #LASA FAILU
+        file_data = file.read()
+    # NOŠIFRĒ
+    encrypted_data = f.encrypt(file_data)
+    # IERAKSTA FAILĀ NOŠIFRĒTO
+    with open(filename, "wb") as file:
+        file.write(encrypted_data)
+#FUNKCIJAS KAS ATŠIFRĒ FAILU
+def decrypt(filename, key):
+
+    f = Fernet(key)
+    with open(filename, "rb") as file:
+        # LASA FAILU
+        encrypted_data = file.read()
+    #ATŠIFRĒ FAILU
+    decrypted_data = f.decrypt(encrypted_data)
+    #IERAKSTA FAILĀ ATŠIFRĒJUMU
+    with open(filename, "wb") as file:
+        file.write(decrypted_data)
 
 #nebeidzamais loops, kurš iet no 7-22 dienā
 def endlessLoop():
@@ -60,11 +96,19 @@ def connections():
         port=3306,
         database="project")
     '''
-    #SASLĒDZAS AR XML FAILU
+    
+    #SASLĒDZAS AR XML FAILU mariadb
     filename= "mariaDBConnection.xml"
     xmlTree = ET.parse(filename)
-    rootElement = xmlTree.getroot()
+    rootElement = xmlTree.getroot()  #PIEVIENO VISU "KOKU" MAINĪGAJAM
     
+    '''
+    for element in rootElement.find("connectMariadb/connection"):
+      some=(element.attrib['name'])
+    if not some:
+
+    print(bool(some))
+    '''
     #IEIET FOR CIKLĀ UN MEKLĒ VAJADZĪGOS ATRIBŪTUS
     for element in rootElement.find("connectMariadb/connection"):
       server1=(element.attrib['host'])
@@ -176,10 +220,23 @@ def insert_table(connectionBool):
 def main():
  #print("Hello!")
   #endlessLoop() #lai atkļūdotu, endless loops
+  #PASKATĀS VAI EKSISTĒ FAILS KEY UN JA NAV, TAD AIZIET UZ FUNKCIJU UN IZVEIDO
+  if not os.path.isfile('./key.key'):
+    write_key()
+  key = load_key() #IELĀDĒ ATSLĒGU NO KEY FAILA
+  filename= open("mariaDBConnection.xml", "r")
+  #NOLASA 1 SIMBOLU NO FAILA UN JA TAS NAV <, TAD FAILS IR ŠIFRĒTS
+  stringToUse=(filename.read(1))
+  filename= "mariaDBConnection.xml" #ATKAL NODEFINĒ FAILA NOSAUKUMU, BET ŠOREIZ KĀ XML FAILU
+  #JA NAV SIMBOLS, TAD FAILS ŠIFRĒTS
+  if not stringToUse=="<":
+    decrypt(filename, key) #ATŠIFRĒ FAILU
+
   connBool =connections() #savienojms izveidots
   create_table(connBool) #tiek veidota jauna tabula
   #insert_table(connBool) #pievienoti ieraksti tabulā
-  
+  #FAILU NOŠIFRĒ, KAD VISAS DARBĪBAS IR PABEIGTAS
+  encrypt(filename, key)
 #mēģināju izveidot: ja savienojums ar db, tad to noslēgt beigās un ierakstīt logfailā
 """
   if bool(connBool):
