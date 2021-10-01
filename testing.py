@@ -240,7 +240,8 @@ def main():
       user1=element.attrib['user']
       database1=element.attrib['database']
       password1=element.attrib['password']
-      print(server1, user1, database1, password1)
+      #print(server1, user1, database1, password1)
+  print("HELLO: ALL DONE!")
   encrypt(filename, key)
   '''
   with open('mariaDBConnection.xml') as f:
