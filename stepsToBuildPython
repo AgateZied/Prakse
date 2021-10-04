@@ -1,0 +1,5 @@
+1. Instalē pyinstaller. komanda terminālī: pip install pyinstaller
+2. Konkrētam failam uzģenerē failu mapi, kurā ir visas pakotnes izmantotās utt. 
+	komanda terminālī: pyinstaller failanosaukums.py
+3. Palaiž caur termināli vai manuāli tāpat exe failu no dist mapes.
+4. Ja izmanto xml failus atsevišķus konkrētais kods, tad manuāli pievienot dist mapē šos failus!
