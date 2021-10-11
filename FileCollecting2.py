@@ -50,6 +50,7 @@ def dataCollection():
                 continue 
             x,y = ast.literal_eval(line)
             #x,y ir kā tuple lists
+
             #print(x,y)
             #sameklē mapi, kur nosaukums sākas ar year
             if x.startswith('Year'):
@@ -61,8 +62,8 @@ def dataCollection():
                 fileWriting(sdrvPATH+'/target.txt',x)
                 #terminālī aisūta failu uz draiveri
                 driverSendRead(sdrvPATH,'send', '212',sdrvPATH + '/target.txt' )
-                driverSendRead(sdrvPATH,'read', '213',sdrvPATH + '/output.txt' )
-                with open(sdrvPATH + '/output.txt') as files1:
+                driverSendRead(sdrvPATH,'read', '213',sdrvPATH + '/output1.txt' )
+                with open(sdrvPATH + '/output1.txt') as files1:
                     for line1 in files1:
                         #noņem atstarpes no beigām un sākuma
                         line1 = line1.strip() 
@@ -82,9 +83,9 @@ def dataCollection():
                             fileWriting(sdrvPATH+'/target.txt',x+'\\'+s)
                             #terminālī aisūta failu uz draiveri
                             driverSendRead(sdrvPATH,'send', '212',sdrvPATH + '/target.txt' )
-                            driverSendRead(sdrvPATH,'read', '213',sdrvPATH + '/output.txt' )
+                            driverSendRead(sdrvPATH,'read', '213',sdrvPATH + '/output2.txt' )
                             
-                            with open(sdrvPATH + '/output.txt') as files2:
+                            with open(sdrvPATH + '/output2.txt') as files2:
                                 for line2 in files2:
                                     #noņem atstarpes
                                     line2 = line2.strip()
@@ -100,7 +101,7 @@ def dataCollection():
                                         #lai lasītu failu un atkodētu, vajadzēja visus 5 mainīgos, tāpēc netiek padots uz funkciju, jo funkcija pieņem tikai 4
                                         #driverSendRead(sdrvPATH,'read', '214',sdrvPATH +'/data/'+x+'/'+s +'/'+ k+' ', '/'+'FileType=RAW')
                                         args = [sdrvPATH +'/SDRV.exe', 'read', '214', sdrvPATH +'/data/'+x+'/'+s +'/'+ k+' ', '/'+'FileType=RAW']
-                                       # print("this is args:",args)
+                                        #print("this is args:",args)
                                         subprocess.call(args, shell=True)
 
 def main():
