@@ -62,7 +62,7 @@ def dataCollection():
                 #terminālī aisūta failu uz draiveri
                 driverSendRead(sdrvPATH,'send', '212',sdrvPATH + '/target.txt' )
                 driverSendRead(sdrvPATH,'read', '213',sdrvPATH + '/output.txt' )
-                with open(sdrvPATH + '/output1.txt') as files1:
+                with open(sdrvPATH + '/output.txt') as files1:
                     for line1 in files1:
                         #noņem atstarpes no beigām un sākuma
                         line1 = line1.strip() 
@@ -84,7 +84,7 @@ def dataCollection():
                             driverSendRead(sdrvPATH,'send', '212',sdrvPATH + '/target.txt' )
                             driverSendRead(sdrvPATH,'read', '213',sdrvPATH + '/output.txt' )
                             
-                            with open(sdrvPATH + '/output2.txt') as files2:
+                            with open(sdrvPATH + '/output.txt') as files2:
                                 for line2 in files2:
                                     #noņem atstarpes
                                     line2 = line2.strip()
